@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Il Clipper Bogliasco | Ristorante e Pizzeria</title>
+    <meta name="description" content="Il Clipper di Bogliasco: ristorante e pizzeria in Via dei Mille 3, tra cucina ligure, piatti di mare, pizza, vini e prenotazioni." />
+    <link rel="preload" as="image" href="assets/images/hero/clipper-esterno-desktop.jpg" media="(min-width: 768px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="assets/images/hero/clipper-esterno-mobile.jpg" media="(max-width: 767px)" fetchpriority="high" />
+    <link rel="stylesheet" href="site.css" />
+  </head>
+  <body>
+
+<a class="skip-link" href="#main" data-i18n="skip">Vai al contenuto</a>
+
+<header class="site-header" data-header>
+  <a class="brand brand-mark header-brand-mark" href="#top" aria-label="Il Clipper, torna all'inizio">
+    <img class="brand-logo-img" src="assets/images/brand/clipper-logo.jpg" width="1240" height="620" alt="Il Clipper" decoding="async" />
+  </a>
+
+  <nav class="desktop-nav" aria-label="Navigazione principale">
+    <a href="#ristorante" data-i18n="nav.restaurant">Ristorante</a>
+    <a href="#location" data-i18n="nav.location">Location</a>
+    <a href="#recensioni" data-i18n="nav.reviews">Recensioni</a>
+    <a href="#contatti" data-i18n="nav.contacts">Contatti</a>
+  </nav>
+
+  <div class="header-actions">
+    <div class="language-switch" aria-label="Seleziona lingua">
+      <button class="is-active" type="button" data-lang="it" aria-pressed="true">ITA</button>
+      <span>/</span>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="book-link" href="#prenota" data-booking-trigger data-context="Prenotazione tavolo">
+      <span data-i18n="cta.book">Prenota</span>
+      <svg class="whatsapp-cta-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path class="whatsapp-icon-mark" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.051 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.822 9.822 0 0 1 6.988 2.899 9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.883-9.887 9.883M20.52 3.449A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.946L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.52 3.449"></path>
+      </svg>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-labelledby="mobile-menu-title" aria-hidden="true">
+  <button class="menu-backdrop" type="button" aria-label="Chiudi il menu" data-menu-close></button>
+  <div class="menu-panel" tabindex="-1">
+    <p class="menu-panel-kicker" id="mobile-menu-title">Il Clipper · Bogliasco</p>
+    <nav aria-label="Navigazione mobile">
+      <a href="#ristorante"><span>01</span><b data-i18n="nav.restaurant">Ristorante</b><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19"></path><path d="M10 19h9v-9"></path></svg></a>
+      <a href="#location"><span>02</span><b data-i18n="nav.location">Location</b><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19"></path><path d="M10 19h9v-9"></path></svg></a>
+      <a href="#recensioni"><span>03</span><b data-i18n="nav.reviews">Recensioni</b><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19"></path><path d="M10 19h9v-9"></path></svg></a>
+      <a href="#contatti"><span>04</span><b data-i18n="nav.contacts">Contatti</b><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19"></path><path d="M10 19h9v-9"></path></svg></a>
+    </nav>
+    <a class="menu-book" href="#prenota" data-booking-trigger data-context="Prenotazione tavolo">
+      <span data-i18n="cta.bookTable">Prenota un tavolo</span>
+      <svg class="whatsapp-cta-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path class="whatsapp-icon-mark" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.051 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.822 9.822 0 0 1 6.988 2.899 9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.883-9.887 9.883M20.52 3.449A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.946L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.52 3.449"></path>
+      </svg>
+    </a>
+    <div class="mobile-menu-meta">
+      <p>Ristorante · Pizzeria<br />Bogliasco, GE</p>
+      <div>
+        <a href="tel:+390103477880">+39 010 347 7880</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Il%20Clipper%20Via%20dei%20Mille%203%20Bogliasco" target="_blank" rel="noreferrer">Maps <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg></a>
+        <a href="tel:+393662457460">WhatsApp <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+  <section class="hero" id="top" aria-label="Il Clipper di Bogliasco, ristorante e pizzeria">
+    <div class="hero-carousel" data-hero-carousel aria-hidden="true">
+      <div class="hero-slide hero-slide--esterno is-active" data-hero-slide data-slide-index="0">
+        <picture class="hero-slide-picture">
+          <source media="(max-width: 767px)" srcset="assets/images/hero/clipper-esterno-mobile.jpg" />
+          <source media="(min-width: 768px)" srcset="assets/images/hero/clipper-esterno-desktop.jpg" />
+          <img
+            class="hero-slide-image"
+            src="assets/images/hero/clipper-esterno-desktop.jpg"
+            width="1672"
+            height="941"
+            alt=""
+            fetchpriority="high"
+            decoding="async"
+          />
+        </picture>
+      </div>
+      <div class="hero-slide hero-slide--interno" data-hero-slide data-slide-index="1">
+        <picture class="hero-slide-picture">
+          <source media="(max-width: 767px)" data-srcset="assets/images/hero/clipper-interno-mobile.jpg" />
+          <source media="(min-width: 768px)" data-srcset="assets/images/hero/clipper-interno-desktop.jpg" />
+          <img
+            class="hero-slide-image"
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            data-src="assets/images/hero/clipper-interno-desktop.jpg"
+            width="1672"
+            height="940"
+            alt=""
+            decoding="async"
+          />
+        </picture>
+      </div>
+      <div class="hero-slide hero-slide--buffet" data-hero-slide data-slide-index="2">
+        <picture class="hero-slide-picture">
+          <source media="(max-width: 767px)" data-srcset="assets/images/hero/clipper-buffet-mobile.jpg" />
+          <source media="(min-width: 768px)" data-srcset="assets/images/hero/clipper-buffet-desktop.jpg" />
+          <img
+            class="hero-slide-image"
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            data-src="assets/images/hero/clipper-buffet-desktop.jpg"
+            width="1672"
+            height="941"
+            alt=""
+            decoding="async"
+          />
+        </picture>
+      </div>
+    </div>
+    <div class="hero-shade"></div>
+
+    <div class="hero-title-wrap">
+      <p class="hero-overline" data-i18n="hero.overline">Ristorante - Pizzeria</p>
+      <h1><span class="hero-title-desktop">Il Clipper</span><span class="hero-title-mobile">IL CLIPPER</span></h1>
+      <div class="hero-address">
+        <p>Bogliasco</p>
+        <p>Golfo Paradiso</p>
+      </div>
+      <p class="hero-hours" data-i18n-html="hero.hours"><span>PRANZO, CENA &amp; CONVIVIALITA'</span> CUCINA LIGURE - PESCE - PIZZA - VINI</p>
+      <div class="hero-actions" aria-label="Azioni principali">
+        <a class="hero-primary" href="#prenota" data-booking-trigger data-context="Prenotazione tavolo">
+          <span data-i18n="cta.bookTable">Prenota un tavolo</span>
+          <svg class="whatsapp-cta-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path class="whatsapp-icon-mark" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.051 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.822 9.822 0 0 1 6.988 2.899 9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.883-9.887 9.883M20.52 3.449A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.946L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.52 3.449"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-socials" aria-label="Link utili Il Clipper">
+      <a class="hero-social-link" href="https://www.instagram.com/clipper_bogliasco?stkn=ZTdsMnYxZDh4aXh3" target="_blank" rel="noreferrer" aria-label="Apri Instagram di Il Clipper">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"></rect><circle cx="12" cy="12" r="3.6"></circle><circle class="instagram-dot" cx="17.2" cy="6.8" r="1.15"></circle></svg>
+        <span>Instagram</span>
+      </a>
+      <a class="hero-social-link" href="https://www.facebook.com/clipperbogliasco?mibextid=wwXIfr%0A&amp;rdid=QgT0TaXOZi1MaTeg&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1JhBtS6Zsn%2F%3Fmibextid%3DwwXIfr%250A#" target="_blank" rel="noreferrer" aria-label="Apri Facebook di Il Clipper">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path class="facebook-mark" d="M14.04 21v-7.05h2.36l.36-2.74h-2.72V9.47c0-.79.22-1.33 1.36-1.33h1.45V5.69A19.4 19.4 0 0 0 14.74 5c-2.09 0-3.52 1.28-3.52 3.62v2.02H8.86v2.74h2.36V21h2.82Z"></path></svg>
+        <span>Facebook</span>
+      </a>
+    </div>
+
+    <div class="hero-edge hero-edge-left" data-i18n="hero.edge">Cucina ligure &amp; mare</div>
+    <div class="hero-edge hero-edge-right">44.3796&deg; N · 9.0687&deg; E</div>
+
+    <a class="scroll-cue" href="#ristorante" aria-label="Scopri Il Clipper">
+      <span data-i18n="hero.discover">Scopri Il Clipper</span>
+      <i aria-hidden="true"></i>
+    </a>
+
+  </section>
+
+  <section class="restaurant-section section-dark" id="ristorante">
+    <div class="section-heading reveal">
+      <p class="section-kicker" data-i18n="restaurant.kicker">01 Ristorante</p>
+      <h2 data-i18n="nav.restaurant">Ristorante</h2>
+      <div class="heading-copy">
+        <p data-i18n="restaurant.copy1">Cucina ligure, specialita' di mare e pizza in un ristorante accogliente nel cuore di Bogliasco.</p>
+        <p data-i18n="restaurant.copy2">Una tavola semplice, curata e conviviale per pranzo, cena e serate sul Golfo Paradiso.</p>
+        <p class="restaurant-mobile-copy" data-i18n="restaurant.mobileCopy">Cucina ligure, pesce e pizza nel cuore di Bogliasco.</p>
+      </div>
+    </div>
+
+    <div class="food-carousel reveal reveal-delay">
+      <div class="food-track" data-food-track tabindex="0" aria-label="Carosello dei piatti di Il Clipper">
+        <figure class="food-card"><img src="assets/images/restaurant/clipper-ristorante-01.jpg" width="1122" height="1402" loading="lazy" decoding="async" alt="Plateau di crostacei e ostriche" /><figcaption><span>01</span><p data-i18n="food.catch">Plateau di mare</p></figcaption></figure>
+        <figure class="food-card food-card-offset"><img src="assets/images/restaurant/clipper-ristorante-02.jpg" width="1116" height="1409" loading="lazy" decoding="async" alt="Crudo di mare con tartare, scampi e frutti rossi" /><figcaption><span>02</span><p data-i18n="food.pasta">Crudo di mare</p></figcaption></figure>
+        <figure class="food-card"><img src="assets/images/restaurant/clipper-ristorante-03.jpg" width="997" height="1578" loading="lazy" decoding="async" alt="Ostriche su ghiaccio con limone e fiori" /><figcaption><span>03</span><p data-i18n="food.stockfish">Ostriche e limone</p></figcaption></figure>
+        <figure class="food-card food-card-offset"><img src="assets/images/restaurant/clipper-ristorante-04.jpg" width="1111" height="1416" loading="lazy" decoding="async" alt="Spaghetti alle vongole su piatto bianco" /><figcaption><span>04</span><p data-i18n="food.grill">Spaghetti alle vongole</p></figcaption></figure>
+        <figure class="food-card"><img src="assets/images/restaurant/clipper-ristorante-05.jpg" width="1374" height="1145" loading="lazy" decoding="async" alt="Spaghetti allo scoglio con cozze, gamberi e salsa di pomodoro" /><figcaption><span>05</span><p data-i18n="food.pizza">Spaghetti allo scoglio</p></figcaption></figure>
+        <figure class="food-card food-card-offset"><img src="assets/images/restaurant/clipper-ristorante-06.jpg" width="1448" height="1086" loading="lazy" decoding="async" alt="Calamarata di mare con erbe fresche" /><figcaption><span>06</span><p data-i18n="food.dessert">Calamarata di mare</p></figcaption></figure>
+      </div>
+
+      <div class="carousel-footer">
+        <p><span data-food-current>01</span> / 06</p>
+        <div class="carousel-arrows">
+          <button type="button" data-food-prev aria-label="Piatto precedente"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4"></path><path d="m10 6-6 6 6 6"></path></svg></button>
+          <button type="button" data-food-next aria-label="Piatto successivo"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16"></path><path d="m14 6 6 6-6 6"></path></svg></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="center-cta reveal">
+      <a class="outline-button" href="#carta-menu" data-card-trigger="food">
+        <span data-i18n="cta.menu">Scopri il nostro menu</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
+      </a>
+      <a class="outline-button" href="#carta-vini" data-card-trigger="wine">
+        <span data-i18n="cta.wine">Carta dei Vini</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
+      </a>
+    </div>
+  </section>
+
+  <section class="location-section" id="location">
+    <div class="section-heading location-heading reveal">
+      <p class="section-kicker" data-i18n="location.kicker">02 Location</p>
+      <h2 data-i18n="nav.location">Location</h2>
+      <div class="heading-copy">
+        <p data-i18n="location.copy1">Via dei Mille 3, nel centro di Bogliasco, a pochi passi dal mare e dal borgo.</p>
+        <p data-i18n="location.copy2">Sala, atmosfera informale e accoglienza ligure per una pausa dopo il mare o una cena in Riviera.</p>
+      </div>
+    </div>
+
+    <div class="location-carousel reveal reveal-delay">
+      <div class="location-track" data-location-track tabindex="0" aria-label="Carosello degli ambienti di Il Clipper">
+        <figure class="location-card"><img src="assets/images/location/clipper-location-01.jpg" width="1122" height="1402" loading="lazy" decoding="async" alt="Ingresso esterno del ristorante Il Clipper" /><figcaption><span>01</span><p data-i18n="location.front">L'ingresso</p></figcaption></figure>
+        <figure class="location-card"><img src="assets/images/location/clipper-location-02.jpg" width="1448" height="1086" loading="lazy" decoding="async" alt="Sala interna del ristorante con tavoli apparecchiati" /><figcaption><span>02</span><p data-i18n="location.room">La sala</p></figcaption></figure>
+        <figure class="location-card"><img src="assets/images/location/clipper-location-03.jpg" width="1091" height="1441" loading="lazy" decoding="async" alt="Dehor esterno coperto del ristorante" /><figcaption><span>03</span><p data-i18n="location.table">Il dehor</p></figcaption></figure>
+        <figure class="location-card"><img src="assets/images/location/clipper-location-04.jpg" width="1093" height="1439" loading="lazy" decoding="async" alt="Sala apparecchiata per un evento" /><figcaption><span>04</span><p data-i18n="location.terrace1">La sala eventi</p></figcaption></figure>
+        <figure class="location-card"><img src="assets/images/location/clipper-location-05.jpg" width="1091" height="1441" loading="lazy" decoding="async" alt="Dettagli decorativi e bottiglie al ristorante" /><figcaption><span>05</span><p data-i18n="location.terrace3">I dettagli</p></figcaption></figure>
+        <figure class="location-card"><img src="assets/images/location/clipper-location-06.jpg" width="1056" height="1490" loading="lazy" decoding="async" alt="Parete con maglie storiche della Sampdoria" /><figcaption><span>06</span><p data-i18n="location.gallery">La parete Sampdoria</p></figcaption></figure>
+      </div>
+
+      <div class="carousel-footer carousel-footer-dark">
+        <p><span data-location-current>01</span> / 06</p>
+        <div class="carousel-arrows">
+          <button type="button" data-location-prev aria-label="Ambiente precedente"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4"></path><path d="m10 6-6 6 6 6"></path></svg></button>
+          <button type="button" data-location-next aria-label="Ambiente successivo"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16"></path><path d="m14 6 6 6-6 6"></path></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews-section" id="recensioni">
+    <div class="reviews-intro reveal">
+      <div>
+        <p class="section-kicker" data-i18n="reviews.kicker">03 Recensioni</p>
+        <h2 data-i18n="reviews.title">Cosa dicono di noi</h2>
+      </div>
+    </div>
+
+    <div class="review-grid reveal reveal-delay">
+      <article class="review-card"><div class="stars" data-i18n="reviews.cardLabel1">Cucina</div><blockquote data-i18n="reviews.quote1">Pesce, pizza e piatti liguri pensati per una pausa di gusto a Bogliasco.</blockquote><p data-i18n="reviews.author1">Il Clipper · Ristorante</p></article>
+      <article class="review-card"><div class="stars" data-i18n="reviews.cardLabel2">Accoglienza</div><blockquote data-i18n="reviews.quote2">Servizio diretto, ambiente conviviale e tavoli pronti per pranzo e cena.</blockquote><p data-i18n="reviews.author2">Bogliasco · GE</p></article>
+      <article class="review-card"><div class="stars" data-i18n="reviews.cardLabel3">Golfo Paradiso</div><blockquote data-i18n="reviews.quote3">Una tappa semplice e generosa tra mare, borgo e profumi della Riviera ligure.</blockquote><p data-i18n="reviews.author3">Via dei Mille 3</p></article>
+    </div>
+
+    <div class="reviews-link reveal">
+      <a class="review-text-link" href="https://www.google.com/search?q=Il+Clipper+Bogliasco+recensioni" target="_blank" rel="noreferrer">
+        <span data-i18n="reviews.read">Leggi le recensioni</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
+      </a>
+      <a class="review-cta" href="https://www.google.com/search?q=Il+Clipper+Bogliasco+recensioni" target="_blank" rel="noreferrer">
+        <span data-i18n="reviews.leave">Lascia una recensione</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
+      </a>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contatti">
+    <div class="contact-panel reveal">
+      <p class="section-kicker" data-i18n="contacts.kicker">04 Contatti</p>
+      <h2 data-i18n="contacts.title">Contatti</h2>
+
+      <div class="contact-list">
+        <div>
+          <h3 data-i18n="contacts.where">Dove siamo</h3>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Il%20Clipper%20Via%20dei%20Mille%203%20Bogliasco" target="_blank" rel="noreferrer">
+            Il Clipper<br />Via dei Mille 3, 16031 Bogliasco GE <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
+          </a>
+        </div>
+        <div>
+          <h3 data-i18n="contacts.hoursLabel">Orari</h3>
+          <p data-i18n-html="contacts.hours">Pranzo e cena<br />tutti i giorni</p>
+        </div>
+        <div class="contact-phone-cell">
+          <h3 data-i18n="contacts.phone">Telefono</h3>
+          <div class="contact-phone-row">
+            <a class="contact-phone-link" href="tel:+390103477880">+39 010 347 7880</a>
+            <a class="contact-phone-link" href="tel:+393662457460">+39 366 245 7460</a>
+          </div>
+        </div>
+        <div>
+          <h3 data-i18n="contacts.whatsapp">WhatsApp</h3>
+          <a href="#prenota" data-booking-trigger data-context="Prenotazione tavolo">Richiedi una prenotazione <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg></a>
+        </div>
+      </div>
+
+      <div class="contact-actions">
+        <a class="contact-book" href="#prenota" data-booking-trigger data-context="Prenotazione tavolo">
+          <span data-i18n="cta.bookTable">Prenota un tavolo</span>
+          <svg class="whatsapp-cta-icon" viewBox="0 0 24 24" aria-hidden="true"><path class="whatsapp-icon-mark" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.051 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.822 9.822 0 0 1 6.988 2.899 9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.883-9.887 9.883M20.52 3.449A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.946L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.52 3.449"></path></svg>
+        </a>
+        <a class="contact-book contact-call" href="tel:+390103477880">
+          <span data-i18n="cta.call">Chiama ora</span>
+          <svg class="phone-line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.3 16.9v2.35a2.1 2.1 0 0 1-2.28 2.1 20.1 20.1 0 0 1-8.76-3.12 19.7 19.7 0 0 1-6.08-6.08 20.1 20.1 0 0 1-3.12-8.8A2.1 2.1 0 0 1 3.15 1.1h2.35a2.1 2.1 0 0 1 2.08 1.8c.13 1 .36 1.98.7 2.92a2.1 2.1 0 0 1-.48 2.17L6.8 9a16.1 16.1 0 0 0 7.2 7.2l1.01-1a2.1 2.1 0 0 1 2.17-.49c.94.35 1.92.58 2.92.71a2.1 2.1 0 0 1 1.2 1.48Z"></path></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="map-wrap reveal reveal-delay">
+      <div class="map-frame">
+        <iframe title="Mappa di Il Clipper Bogliasco" data-map-src="https://www.google.com/maps?q=Il%20Clipper%2C%20Via%20dei%20Mille%203%2C%2016031%20Bogliasco%20GE&amp;z=18&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-veiling" aria-hidden="true"></div>
+        <div class="map-consent" data-map-consent>
+          <p data-i18n="map.notice">La mappa di Google viene caricata solo dopo il consenso ai servizi esterni.</p>
+          <button type="button" data-map-load data-i18n="map.load">Carica la mappa</button>
+        </div>
+        <div class="map-label">
+          <span data-i18n="contacts.mapLabel">Bogliasco · Golfo Paradiso</span>
+          <strong>Il Clipper</strong>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Il%20Clipper%20Via%20dei%20Mille%203%20Bogliasco" target="_blank" rel="noreferrer">
+            <span data-i18n="contacts.openMap">Apri su Google Maps</span>
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <a class="footer-logo footer-brand-mark" href="#top" aria-label="Il Clipper, torna all'inizio">
+      <img class="brand-logo-img" src="assets/images/brand/clipper-logo.jpg" width="1240" height="620" alt="Il Clipper" loading="lazy" decoding="async" />
+    </a>
+    <p data-i18n-html="footer.tagline">La cucina ligure,<br />il respiro del mare.</p>
+    <p class="footer-phone"><a href="tel:+390103477880">+39 010 347 7880</a></p>
+    <div class="footer-socials" aria-label="Link Il Clipper">
+      <a class="footer-social-link" href="tel:+390103477880" aria-label="Chiama Il Clipper"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.3 16.9v2.35a2.1 2.1 0 0 1-2.28 2.1 20.1 20.1 0 0 1-8.76-3.12 19.7 19.7 0 0 1-6.08-6.08 20.1 20.1 0 0 1-3.12-8.8A2.1 2.1 0 0 1 3.15 1.1h2.35a2.1 2.1 0 0 1 2.08 1.8c.13 1 .36 1.98.7 2.92a2.1 2.1 0 0 1-.48 2.17L6.8 9a16.1 16.1 0 0 0 7.2 7.2l1.01-1a2.1 2.1 0 0 1 2.17-.49c.94.35 1.92.58 2.92.71a2.1 2.1 0 0 1 1.2 1.48Z"></path></svg><span>Telefono</span></a>
+      <a class="footer-social-link" href="https://www.google.com/maps/search/?api=1&amp;query=Il%20Clipper%20Via%20dei%20Mille%203%20Bogliasco" target="_blank" rel="noreferrer" aria-label="Apri Il Clipper su Google Maps"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-5.4 7-12a7 7 0 0 0-14 0c0 6.6 7 12 7 12Z"></path><circle cx="12" cy="9" r="2.4"></circle></svg><span>Maps</span></a>
+    </div>
+    <a href="#top"><span data-i18n="footer.top">Torna su</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V4"></path><path d="m6 10 6-6 6 6"></path></svg></a>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span data-year></span> RISTORANTE IL CLIPPER · Bogliasco</p>
+    <p>Via dei Mille 3 · 16031 Bogliasco (GE) · <a href="tel:+390103477880">+39 010 347 7880</a></p>
+  </div>
+  <div class="footer-legal-links" aria-label="Informazioni legali">
+    <button type="button" data-legal-trigger="privacy" data-i18n="legal.privacy">Privacy</button>
+    <button type="button" data-legal-trigger="cookies" data-i18n="legal.cookies">Cookie</button>
+    <button type="button" data-legal-trigger="notes" data-i18n="legal.notes">Note legali</button>
+    <button type="button" data-cookie-manage data-i18n="legal.manageCookies">Gestisci cookie</button>
+  </div>
+</footer>
+
+<div class="card-modal" data-card-modal aria-hidden="true" hidden>
+  <section class="card-dialog" role="dialog" aria-modal="true" aria-labelledby="card-title" tabindex="-1">
+    <header class="card-header">
+      <a class="brand brand-mark card-brand-mark" href="#top" aria-label="Il Clipper, torna all'inizio"><span class="clipper-logo-word">Il Clipper</span></a>
+      <div class="card-tabs" role="tablist" aria-label="Seleziona la carta">
+        <button class="is-active" type="button" role="tab" aria-selected="true" data-card-tab="food" data-i18n="card.food">Menu</button>
+        <button type="button" role="tab" aria-selected="false" data-card-tab="wine" data-i18n="card.wine">Carta dei Vini</button>
+      </div>
+      <button class="card-close" type="button" aria-label="Chiudi la carta" data-card-close><span></span><span></span></button>
+    </header>
+
+    <div class="card-body">
+      <div class="card-intro">
+        <p class="section-kicker" data-card-kicker>Il Clipper · Cucina ligure</p>
+        <h2 id="card-title" data-card-title>Il nostro<br /><em>menu.</em></h2>
+        <p data-card-description>Proposte di mare, cucina ligure, pizza e dessert. La carta puo' variare secondo stagione e disponibilita'.</p>
+      </div>
+      <div class="catalog" data-card-content></div>
+      <p class="catalog-note" data-i18n="card.note">In caso di allergie o intolleranze, prima di ordinare informa il personale di sala.</p>
+    </div>
+  </section>
+</div>
+
+<div class="booking-modal" data-booking-modal aria-hidden="true" hidden>
+  <button class="booking-backdrop" type="button" aria-label="Chiudi il form" data-booking-close></button>
+  <section class="booking-dialog" role="dialog" aria-modal="true" aria-labelledby="booking-title" tabindex="-1">
+    <button class="booking-close" type="button" aria-label="Chiudi" data-booking-close><span></span><span></span></button>
+    <p class="section-kicker" data-i18n="form.kicker">Scrivici su WhatsApp</p>
+    <h2 id="booking-title" data-i18n-html="form.title">Raccontaci<br /><em>cosa desideri.</em></h2>
+    <p class="booking-intro" data-i18n="form.intro">Compila i campi: prepareremo il messaggio e ti chiederemo il consenso prima di aprire WhatsApp.</p>
+
+    <form data-contact-form>
+      <input type="hidden" name="context" value="Prenotazione tavolo" />
+      <label><span data-i18n="form.name">Nome e cognome *</span><input type="text" name="name" autocomplete="name" required /></label>
+      <div class="form-row">
+        <label><span data-i18n="form.date">Data</span><input type="date" name="date" /></label>
+        <label><span data-i18n="form.time">Orario</span><input type="time" name="time" /></label>
+        <label><span data-i18n="form.guests">Persone</span><select name="guests" autocomplete="off"><option value="" data-i18n="form.choose">Scegli</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6+">6+</option></select></label>
+      </div>
+      <label><span data-i18n="form.message">Messaggio</span><textarea name="message" rows="3" data-i18n-placeholder="form.placeholder" placeholder="Richieste o informazioni utili"></textarea></label>
+      <button class="whatsapp-submit" type="submit">
+        <span data-i18n="form.submit">Continua su WhatsApp</span>
+        <svg class="whatsapp-cta-icon" viewBox="0 0 24 24" aria-hidden="true"><path class="whatsapp-icon-mark" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.051 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.822 9.822 0 0 1 6.988 2.899 9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.883-9.887 9.883M20.52 3.449A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.946L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.52 3.449"></path></svg>
+      </button>
+      <p class="form-note" data-i18n="form.note">Nessun dato viene salvato sul sito: prima di aprire WhatsApp ti chiediamo il consenso ai servizi esterni.</p>
+    </form>
+  </section>
+</div>
+
+<div class="legal-modal" data-legal-modal aria-hidden="true" hidden>
+  <button class="legal-backdrop" type="button" aria-label="Chiudi le informazioni legali" data-legal-close></button>
+  <section class="legal-dialog" role="dialog" aria-modal="true" aria-labelledby="legal-title" tabindex="-1">
+    <button class="legal-close" type="button" aria-label="Chiudi" data-legal-close><span></span><span></span></button>
+    <p class="section-kicker">Il Clipper · Informazioni legali</p>
+    <h2 id="legal-title">Privacy,<br /><em>cookie e note legali.</em></h2>
+    <div class="legal-tabs" role="tablist" aria-label="Seleziona informativa">
+      <button class="is-active" type="button" role="tab" aria-selected="true" data-legal-tab="privacy">Privacy</button>
+      <button type="button" role="tab" aria-selected="false" data-legal-tab="cookies">Cookie</button>
+      <button type="button" role="tab" aria-selected="false" data-legal-tab="notes">Note legali</button>
+    </div>
+    <div class="legal-content">
+      <article class="legal-panel is-active" data-legal-panel="privacy">
+        <h3>Informativa privacy</h3>
+        <p><strong>Ultimo aggiornamento:</strong> 10/09/2026.</p>
+        <p>Questo sito presenta l'attivita' del ristorante Il Clipper, i contatti e permette di preparare una conversazione WhatsApp per richieste o prenotazioni. Il sito non salva i dati inseriti nel modulo: il messaggio viene composto nel browser e WhatsApp si apre solo dopo il consenso ai servizi esterni.</p>
+        <p>Lo stesso consenso e' richiesto prima di caricare la mappa Google o aprire un link verso Google Maps. Se non accetti i servizi esterni, puoi comunque consultare il sito e contattare direttamente il ristorante via telefono.</p>
+      </article>
+      <article class="legal-panel" data-legal-panel="cookies">
+        <h3>Cookie policy</h3>
+        <p>Il sito non usa cookie di profilazione, sistemi di advertising o analytics. Per ricordare la scelta sui servizi esterni viene usata una preferenza tecnica nel browser.</p>
+        <p>WhatsApp e Google Maps vengono aperti o caricati solo dopo consenso. La scelta puo' essere modificata in qualsiasi momento dal link "Gestisci cookie" nel footer.</p>
+      </article>
+      <article class="legal-panel" data-legal-panel="notes">
+        <h3>Note legali</h3>
+        <p><strong>Nome attivita':</strong> Ristorante Il Clipper · <strong>Indirizzo:</strong> Via dei Mille 3, 16031 Bogliasco (GE).</p>
+        <p>Menu, prezzi, etichette, annate e disponibilita' possono cambiare senza preavviso. In caso di allergie o intolleranze alimentari, informa sempre il personale prima dell'ordinazione.</p>
+      </article>
+    </div>
+  </section>
+</div>
+
+<div class="cookie-banner" data-cookie-banner hidden role="region" aria-label="Preferenze cookie">
+  <div>
+    <h2 data-i18n="cookie.title">Privacy e servizi esterni</h2>
+    <p data-i18n="cookie.copy">Usiamo solo strumenti tecnici. Per aprire WhatsApp dai form o caricare Google Maps ti chiediamo prima il consenso ai servizi esterni.</p>
+  </div>
+  <div class="cookie-actions">
+    <button type="button" data-cookie-necessary data-i18n="cookie.necessary">Solo necessari</button>
+    <button type="button" data-cookie-accept data-i18n="cookie.accept">Accetta servizi esterni</button>
+    <button type="button" data-legal-trigger="cookies" data-i18n="cookie.preferences">Dettagli</button>
+  </div>
+</div>
+
+<a class="mobile-sticky-book" href="#prenota" data-booking-trigger data-context="Prenotazione tavolo">
+  <span data-i18n="cta.bookTable">Prenota un tavolo</span>
+  <svg class="whatsapp-cta-icon" viewBox="0 0 24 24" aria-hidden="true"><path class="whatsapp-icon-mark" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.051 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.822 9.822 0 0 1 6.988 2.899 9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.883-9.887 9.883M20.52 3.449A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.946L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.52 3.449"></path></svg>
+</a>
+
+    <script src="site.js" defer></script>
+  </body>
+</html>
