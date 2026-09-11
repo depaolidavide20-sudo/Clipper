@@ -6033,11 +6033,19 @@ body {
     max-height: none;
   }
 
-  @supports (height: 100dvh) {
-    .hero {
-      height: 100dvh;
-      min-height: 100dvh;
-    }
+  .hero-actions {
+    display: none !important;
+  }
+
+  .hero-carousel,
+  .hero-title-wrap {
+    transform: none !important;
+  }
+
+  .hero-title-wrap,
+  .hero-socials,
+  .scroll-cue {
+    opacity: 1 !important;
   }
 
   .hero-shade {

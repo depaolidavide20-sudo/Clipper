@@ -886,6 +886,7 @@
   const heroTitle = document.querySelector(".hero-title-wrap");
   const heroSocials = document.querySelector(".hero-socials");
   const scrollCue = document.querySelector(".scroll-cue");
+  const heroStaticMobile = window.matchMedia("(max-width: 767px)");
   const heroSlideDuration = 4000;
   let heroMotionFrame = null;
   let heroSlideIndex = 0;
@@ -1004,6 +1005,16 @@
   const updateHeroMotion = () => {
     heroMotionFrame = null;
     if (!hero || !heroMedia || !heroTitle || reduceMotion) return;
+
+    if (heroStaticMobile.matches) {
+      heroMedia.style.removeProperty("transform");
+      heroTitle.style.removeProperty("transform");
+      heroTitle.style.removeProperty("opacity");
+      heroSocials?.style.removeProperty("opacity");
+      scrollCue?.style.removeProperty("opacity");
+      return;
+    }
+
     const progress = Math.min(1, Math.max(0, window.scrollY / hero.offsetHeight));
 
     if (progress < 0.002) {
