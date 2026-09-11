@@ -6091,3 +6091,91 @@ body {
     object-position: center 34%;
   }
 }
+
+/* Requested desktop refinements */
+.site-header .brand-logo-img,
+.footer-brand-mark .brand-logo-img {
+  filter: grayscale(1) brightness(1.55) contrast(1.2);
+}
+
+.site-header .brand-logo-img {
+  filter: grayscale(1) brightness(1.55) contrast(1.2) drop-shadow(0 0.28rem 0.65rem rgba(0, 0, 0, 0.52));
+}
+
+@media (min-width: 768px) {
+  .hero-slide--buffet .hero-slide-image {
+    object-position: center 24%;
+    transform-origin: center top;
+  }
+
+  .hero-slide.is-active.hero-slide--buffet .hero-slide-image {
+    animation: heroKenBurnsBuffetWide 5.35s ease-out both;
+  }
+
+  @keyframes heroKenBurnsBuffetWide {
+    from { transform: scale(1.002); }
+    to { transform: scale(1.018); }
+  }
+
+  .location-card:nth-child(1),
+  .location-card:nth-child(3),
+  .location-card:nth-child(4),
+  .location-card:nth-child(5) {
+    flex-basis: min(44vw, 37rem);
+  }
+
+  .location-card:nth-child(1) img,
+  .location-card:nth-child(3) img,
+  .location-card:nth-child(4) img,
+  .location-card:nth-child(5) img {
+    height: clamp(32rem, 45vw, 41rem);
+  }
+
+  .location-card:nth-child(1) img {
+    object-position: center 49%;
+  }
+
+  .location-card:nth-child(3) img {
+    object-position: center 51%;
+  }
+
+  .location-card:nth-child(4) img {
+    object-position: center 52%;
+  }
+
+  .location-card:nth-child(5) img {
+    object-position: center 46%;
+  }
+}
+
+/* Requested carousel additions */
+.hero-slide--servizio .hero-slide-image {
+  object-position: center center;
+}
+
+.hero-slide.is-active.hero-slide--servizio .hero-slide-image {
+  animation: heroKenBurnsService 5.35s ease-out both;
+}
+
+@keyframes heroKenBurnsService {
+  from { transform: scale(1); }
+  to { transform: scale(1.025); }
+}
+
+.food-card:nth-child(7) img {
+  object-position: center 52%;
+}
+
+.food-card:nth-child(8) img {
+  object-position: center center;
+}
+
+@media (max-width: 767px) {
+  .hero-slide--servizio .hero-slide-image {
+    object-position: center 45%;
+  }
+
+  .food-card:nth-child(7) img {
+    object-position: center 50%;
+  }
+}

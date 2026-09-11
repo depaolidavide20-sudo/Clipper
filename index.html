@@ -88,7 +88,22 @@
           />
         </picture>
       </div>
-      <div class="hero-slide hero-slide--interno" data-hero-slide data-slide-index="1">
+      <div class="hero-slide hero-slide--buffet" data-hero-slide data-slide-index="1">
+        <picture class="hero-slide-picture">
+          <source media="(max-width: 767px)" data-srcset="assets/images/hero/clipper-buffet-mobile.jpg" />
+          <source media="(min-width: 768px)" data-srcset="assets/images/hero/clipper-buffet-desktop.jpg" />
+          <img
+            class="hero-slide-image"
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            data-src="assets/images/hero/clipper-buffet-desktop.jpg"
+            width="1672"
+            height="941"
+            alt=""
+            decoding="async"
+          />
+        </picture>
+      </div>
+      <div class="hero-slide hero-slide--interno" data-hero-slide data-slide-index="2">
         <picture class="hero-slide-picture">
           <source media="(max-width: 767px)" data-srcset="assets/images/hero/clipper-interno-mobile.jpg" />
           <source media="(min-width: 768px)" data-srcset="assets/images/hero/clipper-interno-desktop.jpg" />
@@ -103,14 +118,14 @@
           />
         </picture>
       </div>
-      <div class="hero-slide hero-slide--buffet" data-hero-slide data-slide-index="2">
+      <div class="hero-slide hero-slide--servizio" data-hero-slide data-slide-index="3">
         <picture class="hero-slide-picture">
-          <source media="(max-width: 767px)" data-srcset="assets/images/hero/clipper-buffet-mobile.jpg" />
-          <source media="(min-width: 768px)" data-srcset="assets/images/hero/clipper-buffet-desktop.jpg" />
+          <source media="(max-width: 767px)" data-srcset="assets/images/hero/clipper-servizio-mobile.png" />
+          <source media="(min-width: 768px)" data-srcset="assets/images/hero/clipper-servizio-desktop.png" />
           <img
             class="hero-slide-image"
             src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
-            data-src="assets/images/hero/clipper-buffet-desktop.jpg"
+            data-src="assets/images/hero/clipper-servizio-desktop.png"
             width="1672"
             height="941"
             alt=""
@@ -177,12 +192,14 @@
         <figure class="food-card food-card-offset"><img src="assets/images/restaurant/clipper-ristorante-02.jpg" width="1116" height="1409" loading="lazy" decoding="async" alt="Crudo di mare con tartare, scampi e frutti rossi" /><figcaption><span>02</span><p data-i18n="food.pasta">Crudo di mare</p></figcaption></figure>
         <figure class="food-card"><img src="assets/images/restaurant/clipper-ristorante-03.jpg" width="997" height="1578" loading="lazy" decoding="async" alt="Ostriche su ghiaccio con limone e fiori" /><figcaption><span>03</span><p data-i18n="food.stockfish">Ostriche e limone</p></figcaption></figure>
         <figure class="food-card food-card-offset"><img src="assets/images/restaurant/clipper-ristorante-04.jpg" width="1111" height="1416" loading="lazy" decoding="async" alt="Spaghetti alle vongole su piatto bianco" /><figcaption><span>04</span><p data-i18n="food.grill">Spaghetti alle vongole</p></figcaption></figure>
-        <figure class="food-card"><img src="assets/images/restaurant/clipper-ristorante-05.jpg" width="1374" height="1145" loading="lazy" decoding="async" alt="Spaghetti allo scoglio con cozze, gamberi e salsa di pomodoro" /><figcaption><span>05</span><p data-i18n="food.pizza">Spaghetti allo scoglio</p></figcaption></figure>
-        <figure class="food-card food-card-offset"><img src="assets/images/restaurant/clipper-ristorante-06.jpg" width="1448" height="1086" loading="lazy" decoding="async" alt="Calamarata di mare con erbe fresche" /><figcaption><span>06</span><p data-i18n="food.dessert">Calamarata di mare</p></figcaption></figure>
+        <figure class="food-card"><img src="assets/images/restaurant/clipper-ristorante-07.png" width="1122" height="1402" loading="lazy" decoding="async" alt="Filetto di pesce su crema verde con fiori eduli" /><figcaption><span>05</span><p data-i18n="food.fish">Filetto delicato</p></figcaption></figure>
+        <figure class="food-card food-card-offset"><img src="assets/images/restaurant/clipper-ristorante-05.jpg" width="1374" height="1145" loading="lazy" decoding="async" alt="Spaghetti allo scoglio con cozze, gamberi e salsa di pomodoro" /><figcaption><span>06</span><p data-i18n="food.pizza">Spaghetti allo scoglio</p></figcaption></figure>
+        <figure class="food-card"><img src="assets/images/restaurant/clipper-ristorante-08.png" width="949" height="1658" loading="lazy" decoding="async" alt="Pasta con calamari, pomodorini, olive e pistacchio" /><figcaption><span>07</span><p data-i18n="food.specialPasta">Pasta mediterranea</p></figcaption></figure>
+        <figure class="food-card food-card-offset"><img src="assets/images/restaurant/clipper-ristorante-06.jpg" width="1448" height="1086" loading="lazy" decoding="async" alt="Calamarata di mare con erbe fresche" /><figcaption><span>08</span><p data-i18n="food.dessert">Calamarata di mare</p></figcaption></figure>
       </div>
 
       <div class="carousel-footer">
-        <p><span data-food-current>01</span> / 06</p>
+        <p><span data-food-current>01</span> / 08</p>
         <div class="carousel-arrows">
           <button type="button" data-food-prev aria-label="Piatto precedente"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4"></path><path d="m10 6-6 6 6 6"></path></svg></button>
           <button type="button" data-food-next aria-label="Piatto successivo"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16"></path><path d="m14 6 6 6-6 6"></path></svg></button>
