@@ -5933,3 +5933,153 @@ body {
     display: none;
   }
 }
+
+/* Latest visual tuning */
+.site-header {
+  background: rgba(0, 0, 0, 0.94);
+  backdrop-filter: blur(16px);
+}
+
+.site-header::after {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.hero {
+  height: 100svh;
+  min-height: 100svh;
+  max-height: none;
+}
+
+@supports (height: 100dvh) {
+  .hero {
+    height: 100dvh;
+    min-height: 100dvh;
+  }
+}
+
+.hero-slide-image {
+  filter: none;
+}
+
+.hero-shade {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.02) 0%,
+      rgba(0, 0, 0, 0) 38%,
+      rgba(0, 0, 0, 0.12) 100%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.04), transparent 52%, rgba(0, 0, 0, 0.04));
+}
+
+.hero-slide--buffet .hero-slide-image {
+  object-position: center 32%;
+}
+
+.location-card img {
+  height: clamp(25rem, 42vw, 36rem);
+}
+
+.location-card:nth-child(1) img {
+  object-position: center 42%;
+}
+
+.location-card:nth-child(2) img {
+  object-position: center 54%;
+}
+
+.location-card:nth-child(3) img {
+  object-position: center 46%;
+}
+
+.location-card:nth-child(4) img {
+  object-position: center 56%;
+}
+
+.location-card:nth-child(5) img {
+  object-position: center 45%;
+}
+
+.location-card:nth-child(6) img {
+  object-position: center 35%;
+}
+
+.tripadvisor-icon {
+  width: 1.08rem;
+  height: 1.08rem;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.tripadvisor-icon circle:nth-of-type(3),
+.tripadvisor-icon circle:nth-of-type(4) {
+  fill: currentColor;
+  stroke: none;
+}
+
+.review-cta .tripadvisor-icon {
+  width: 1.16rem;
+  height: 1.16rem;
+}
+
+@media (max-width: 767px) {
+  .hero {
+    height: 100svh;
+    min-height: 100svh;
+    max-height: none;
+  }
+
+  @supports (height: 100dvh) {
+    .hero {
+      height: 100dvh;
+      min-height: 100dvh;
+    }
+  }
+
+  .hero-shade {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.02) 0%,
+        rgba(0, 0, 0, 0) 34%,
+        rgba(0, 0, 0, 0.16) 100%
+      ),
+      linear-gradient(90deg, rgba(0, 0, 0, 0.03), transparent 52%, rgba(0, 0, 0, 0.03));
+  }
+
+  .hero-slide--buffet .hero-slide-image {
+    object-position: center 34%;
+  }
+
+  .location-card img {
+    height: clamp(28rem, 108vw, 40rem);
+  }
+
+  .location-card:nth-child(1) img {
+    object-position: center 40%;
+  }
+
+  .location-card:nth-child(2) img {
+    object-position: center 53%;
+  }
+
+  .location-card:nth-child(3) img {
+    object-position: center 45%;
+  }
+
+  .location-card:nth-child(4) img {
+    object-position: center 56%;
+  }
+
+  .location-card:nth-child(5) img {
+    object-position: center 45%;
+  }
+
+  .location-card:nth-child(6) img {
+    object-position: center 34%;
+  }
+}
