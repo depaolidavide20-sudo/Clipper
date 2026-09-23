@@ -6179,3 +6179,10 @@ body {
     object-position: center 50%;
   }
 }
+
+/* Hero title refinement */
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: clamp(5.2rem, 11.4vw, 10.75rem);
+  }
+}
