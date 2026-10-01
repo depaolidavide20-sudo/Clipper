@@ -923,6 +923,8 @@
   });
 
   const consentStorageKey = "ilClipperExternalServicesConsent";
+  const consentVersion = 2;
+  const consentMaxAge = 180 * 24 * 60 * 60 * 1000;
   const cookieBanner = document.querySelector("[data-cookie-banner]");
   const mapFrame = document.querySelector("[data-map-src]");
   const mapConsent = document.querySelector("[data-map-consent]");
@@ -932,15 +934,29 @@
 
   const readConsent = () => {
     try {
-      return JSON.parse(window.localStorage.getItem(consentStorageKey) || "null");
+      const storedConsent = JSON.parse(window.localStorage.getItem(consentStorageKey) || "null");
+      const savedAt = storedConsent?.savedAt ? Date.parse(storedConsent.savedAt) : NaN;
+      const isCurrent = storedConsent?.version === consentVersion;
+      const isFresh = Number.isFinite(savedAt) && Date.now() - savedAt <= consentMaxAge;
+
+      if (!isCurrent || !isFresh) {
+        window.localStorage.removeItem(consentStorageKey);
+        return null;
+      }
+
+      return storedConsent;
     } catch {
+      window.localStorage.removeItem(consentStorageKey);
       return null;
     }
   };
 
   const saveConsent = (externalServices) => {
     try {
-      window.localStorage.setItem(consentStorageKey, JSON.stringify({ externalServices, savedAt: new Date().toISOString() }));
+      window.localStorage.setItem(
+        consentStorageKey,
+        JSON.stringify({ version: consentVersion, externalServices, savedAt: new Date().toISOString() }),
+      );
     } catch {
       // Consent still applies for this page view even when storage is unavailable.
     }
