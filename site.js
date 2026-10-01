@@ -618,6 +618,9 @@
     if (!stickyBookSections.length) return;
     const footerSection = stickyBookSections.find(({ element }) => element.matches(".site-footer"));
     const footerRect = footerSection?.element.getBoundingClientRect();
+    const footerIsVisible = Boolean(footerRect && footerRect.top < window.innerHeight && footerRect.bottom > 0);
+    mobileStickyBook?.classList.toggle("is-over-footer", footerIsVisible);
+
     if (footerRect && footerRect.top <= window.innerHeight * 0.72 && footerRect.bottom > 0) {
       setStickyBookTheme("dark");
       return;
@@ -932,6 +935,14 @@
   let externalServicesAllowed = false;
   let pendingExternalAction = null;
 
+  const clearStoredConsent = () => {
+    try {
+      window.localStorage.removeItem(consentStorageKey);
+    } catch {
+      // Storage can be disabled; consent remains limited to this page view.
+    }
+  };
+
   const readConsent = () => {
     try {
       const storedConsent = JSON.parse(window.localStorage.getItem(consentStorageKey) || "null");
@@ -940,13 +951,13 @@
       const isFresh = Number.isFinite(savedAt) && Date.now() - savedAt <= consentMaxAge;
 
       if (!isCurrent || !isFresh) {
-        window.localStorage.removeItem(consentStorageKey);
+        clearStoredConsent();
         return null;
       }
 
       return storedConsent;
     } catch {
-      window.localStorage.removeItem(consentStorageKey);
+      clearStoredConsent();
       return null;
     }
   };
