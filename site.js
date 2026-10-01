@@ -123,7 +123,7 @@
       "legal.notes": "Note legali",
       "legal.manageCookies": "Gestisci cookie",
       "cookie.title": "Privacy e servizi esterni",
-      "cookie.copy": "Usiamo solo strumenti tecnici. Per aprire WhatsApp dai form o caricare Google Maps ti chiediamo prima il consenso ai servizi esterni.",
+      "cookie.copy": "Usiamo solo strumenti tecnici. Google Maps viene incorporato nella pagina solo dopo il tuo consenso.",
       "cookie.necessary": "Solo necessari",
       "cookie.accept": "Accetta servizi esterni",
       "cookie.preferences": "Dettagli",
@@ -131,7 +131,7 @@
       "map.load": "Carica la mappa",
       "form.kicker": "Scrivici su WhatsApp",
       "form.title": "Raccontaci<br><em>cosa desideri.</em>",
-      "form.intro": "Compila i campi: prepareremo il messaggio e ti chiederemo il consenso prima di aprire WhatsApp.",
+      "form.intro": "Compila i campi: prepareremo il messaggio e apriremo WhatsApp per permetterti di inviarlo.",
       "form.name": "Nome e cognome *",
       "form.date": "Data",
       "form.time": "Orario",
@@ -140,7 +140,7 @@
       "form.message": "Messaggio",
       "form.placeholder": "Richieste o informazioni utili",
       "form.submit": "Continua su WhatsApp",
-      "form.note": "Nessun dato viene salvato sul sito: prima di aprire WhatsApp ti chiediamo il consenso ai servizi esterni.",
+      "form.note": "Nessun dato viene salvato sul sito: il messaggio viene preparato nel browser e inviato solo se lo confermi in WhatsApp.",
     },
     en: {
       skip: "Skip to content",
@@ -224,7 +224,7 @@
       "legal.notes": "Legal notes",
       "legal.manageCookies": "Manage cookies",
       "cookie.title": "Privacy and external services",
-      "cookie.copy": "We only use technical tools. To open WhatsApp from forms or load Google Maps, we ask for your consent to external services first.",
+      "cookie.copy": "We only use technical tools. Google Maps is embedded in the page only after your consent.",
       "cookie.necessary": "Necessary only",
       "cookie.accept": "Accept external services",
       "cookie.preferences": "Details",
@@ -232,7 +232,7 @@
       "map.load": "Load map",
       "form.kicker": "Message us on WhatsApp",
       "form.title": "Tell us<br><em>what you need.</em>",
-      "form.intro": "Complete the fields: we will prepare your message and ask for consent before opening WhatsApp.",
+      "form.intro": "Complete the fields: we will prepare your message and open WhatsApp so you can send it.",
       "form.name": "Full name *",
       "form.date": "Date",
       "form.time": "Time",
@@ -241,7 +241,7 @@
       "form.message": "Message",
       "form.placeholder": "Requests or useful information",
       "form.submit": "Continue on WhatsApp",
-      "form.note": "No data is stored on this website: we ask for consent to external services before opening WhatsApp.",
+      "form.note": "No data is stored on this website: the message is prepared in your browser and sent only if you confirm it in WhatsApp.",
     },
   };
 
@@ -932,8 +932,6 @@
   const mapFrame = document.querySelector("[data-map-src]");
   const mapConsent = document.querySelector("[data-map-consent]");
   const mapFrameWrap = mapFrame?.closest(".map-frame");
-  let externalServicesAllowed = false;
-  let pendingExternalAction = null;
 
   const clearStoredConsent = () => {
     try {
@@ -987,18 +985,11 @@
     }, 220);
   };
 
-  const hasExternalServicesConsent = () => externalServicesAllowed || readConsent()?.externalServices === true;
   const openExternalUrl = (url) => window.open(url, "_blank", "noopener,noreferrer");
 
   const requestExternalUrl = (url) => {
-    if (hasExternalServicesConsent()) {
-      openExternalUrl(url);
-      return true;
-    }
-
-    pendingExternalAction = () => openExternalUrl(url);
-    showCookieBanner();
-    return false;
+    openExternalUrl(url);
+    return true;
   };
 
   const loadExternalMap = ({ persist = true } = {}) => {
@@ -1016,28 +1007,16 @@
   };
 
   const setExternalConsent = (externalServices) => {
-    externalServicesAllowed = externalServices;
     saveConsent(externalServices);
     if (externalServices) loadExternalMap({ persist: false });
     else unloadExternalMap();
     hideCookieBanner();
 
-    const action = externalServices ? pendingExternalAction : null;
-    pendingExternalAction = null;
-    action?.();
   };
 
   document.querySelector("[data-cookie-accept]")?.addEventListener("click", () => setExternalConsent(true));
   document.querySelector("[data-cookie-necessary]")?.addEventListener("click", () => setExternalConsent(false));
   document.querySelector("[data-map-load]")?.addEventListener("click", () => setExternalConsent(true));
-
-  document.querySelectorAll("a[href*='google.com/maps']").forEach((link) => {
-    link.addEventListener("click", (event) => {
-      if (hasExternalServicesConsent()) return;
-      event.preventDefault();
-      requestExternalUrl(link.href);
-    });
-  });
 
   document.querySelectorAll("[data-cookie-manage]").forEach((button) => {
     button.addEventListener("click", (event) => {
@@ -1047,7 +1026,6 @@
   });
 
   const initialConsent = readConsent();
-  externalServicesAllowed = initialConsent?.externalServices === true;
   if (initialConsent?.externalServices) {
     loadExternalMap({ persist: false });
   } else if (initialConsent) {
