@@ -1,443 +1,523 @@
 <!doctype html>
-<html class="notranslate" lang="it" translate="no">
+<html lang="it">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="ETRA a Genova: ristorante fine dining e galleria d'arte contemporanea in Piazza De Ferrari 4." />
-    <meta name="google" content="notranslate" />
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#070d0a" />
-    <meta property="og:title" content="ETRA | Ristorante a Genova" />
-    <meta property="og:description" content="Cucina creativa, arte contemporanea e percorsi degustazione nel cuore di Genova." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://etra-genova.depaolidavide20.chatgpt.site/" />
-    <title>ETRA | Ristorante a Genova</title>
-    <link rel="canonical" href="https://etra-genova.depaolidavide20.chatgpt.site/" />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preload" as="image" href="assets/hero-location-desktop.png" media="(min-width: 761px)" fetchpriority="high" />
-    <link rel="preload" as="image" href="assets/hero-location-mobile.png" media="(max-width: 760px)" fetchpriority="high" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Il Clipper Bogliasco | Ristorante di mare</title>
+    <meta name="description" content="Il Clipper di Bogliasco: ristorante in Via dei Mille 3, tra cucina ligure, specialita di mare, vini e prenotazioni." />
+    <link rel="preload" as="image" href="assets/images/hero/clipper-esterno-desktop.jpg" media="(min-width: 768px)" fetchpriority="high" />
+    <link rel="preload" as="image" href="assets/images/hero/clipper-esterno-mobile.jpg" media="(max-width: 767px)" fetchpriority="high" />
     <link rel="stylesheet" href="site.css" />
-    <script src="site.js?v=17" defer></script>
   </head>
-  <body class="notranslate" translate="no">
-    <a class="skip-link" href="#main" data-i18n="skip">Vai al contenuto</a>
+  <body>
+<a class="skip-link" href="#main" data-i18n="skip">Vai al contenuto</a>
 
-    <header class="site-header" data-header>
-      <a class="brand header-brand-mark" href="#top" aria-label="ETRA, torna all'inizio"><img class="brand-logo-img" src="assets/etra-logo-light.png" alt="ETRA" width="2172" height="724" /></a>
+<header class="site-header" data-header>
+  <a class="brand brand-mark header-brand-mark" href="#top" aria-label="Il Clipper, torna all'inizio">
+    <img class="brand-logo-img" src="assets/images/brand/clipper-logo-transparent.png" width="1240" height="620" alt="Il Clipper" decoding="async" />
+  </a>
 
-      <nav class="desktop-nav" aria-label="Navigazione principale">
-        <a href="#ristorante" data-i18n="nav.restaurant">Ristorante</a>
-        <a href="#galleria" data-i18n="nav.gallery">Galleria</a>
-        <a href="#recensioni" data-i18n="nav.reviews">Recensioni</a>
-        <a href="#contatti" data-i18n="nav.contacts">Contatti</a>
-      </nav>
+  <nav class="desktop-nav" aria-label="Navigazione principale">
+    <a href="#ristorante" data-i18n="nav.restaurant">Ristorante</a>
+    <a href="#location" data-i18n="nav.location">Location</a>
+    <a href="#recensioni" data-i18n="nav.reviews">Recensioni</a>
+    <a href="#contatti" data-i18n="nav.contacts">Contatti</a>
+  </nav>
 
-      <div class="header-actions">
-        <div class="language-switch" aria-label="Seleziona lingua">
-          <button class="is-active" type="button" data-lang="it" aria-pressed="true">ITA</button>
-          <span>/</span>
-          <button type="button" data-lang="en" aria-pressed="false">EN</button>
-        </div>
-        <a class="book-link" href="https://widget.thefork.com/it/4495685f-8914-46d8-9fa0-df415a9618d3" target="_blank" rel="noreferrer">
-          <span data-i18n="cta.book">Prenota</span>
-          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
-        </a>
-        <button class="menu-toggle" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="mobile-menu">
-          <span></span><span></span>
-        </button>
+  <div class="header-actions">
+    <div class="language-switch" aria-label="Seleziona lingua">
+      <button class="is-active" type="button" data-lang="it" aria-pressed="true">ITA</button>
+      <span>/</span>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="book-link" href="#prenota" data-booking-trigger data-context="Prenotazione tavolo">
+      <span data-i18n="cta.book">Prenota</span>
+      <svg class="whatsapp-cta-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path class="whatsapp-icon-mark" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.051 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.822 9.822 0 0 1 6.988 2.899 9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.883-9.887 9.883M20.52 3.449A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.946L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.52 3.449"></path>
+      </svg>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Apri il menu" aria-expanded="false" aria-controls="mobile-menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-labelledby="mobile-menu-title" aria-hidden="true">
+  <button class="menu-backdrop" type="button" aria-label="Chiudi il menu" data-menu-close></button>
+  <div class="menu-panel" tabindex="-1">
+    <p class="menu-panel-kicker" id="mobile-menu-title">Il Clipper · Bogliasco</p>
+    <nav aria-label="Navigazione mobile">
+      <a href="#ristorante"><span>01</span><b data-i18n="nav.restaurant">Ristorante</b><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19"></path><path d="M10 19h9v-9"></path></svg></a>
+      <a href="#location"><span>02</span><b data-i18n="nav.location">Location</b><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19"></path><path d="M10 19h9v-9"></path></svg></a>
+      <a href="#recensioni"><span>03</span><b data-i18n="nav.reviews">Recensioni</b><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19"></path><path d="M10 19h9v-9"></path></svg></a>
+      <a href="#contatti"><span>04</span><b data-i18n="nav.contacts">Contatti</b><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19"></path><path d="M10 19h9v-9"></path></svg></a>
+    </nav>
+    <a class="menu-book" href="#prenota" data-booking-trigger data-context="Prenotazione tavolo">
+      <span data-i18n="cta.bookTable">Prenota un tavolo</span>
+      <svg class="whatsapp-cta-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path class="whatsapp-icon-mark" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.051 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.822 9.822 0 0 1 6.988 2.899 9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.883-9.887 9.883M20.52 3.449A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.946L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.52 3.449"></path>
+      </svg>
+    </a>
+    <div class="mobile-menu-meta">
+      <p>Ristorante di mare<br />Bogliasco, GE</p>
+      <div>
+        <a href="tel:+390103477880">+39 010 347 7880</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Il%20Clipper%20Via%20dei%20Mille%203%20Bogliasco" target="_blank" rel="noreferrer">Maps <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg></a>
+        <a href="tel:+393662457460">WhatsApp <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg></a>
       </div>
+    </div>
+  </div>
+</div>
+
+<main id="main">
+  <section class="hero" id="top" aria-label="Il Clipper di Bogliasco, ristorante di mare">
+    <div class="hero-carousel" data-hero-carousel aria-hidden="true">
+      <div class="hero-slide hero-slide--esterno is-active" data-hero-slide data-slide-index="0">
+        <picture class="hero-slide-picture">
+          <source media="(max-width: 767px)" srcset="assets/images/hero/clipper-esterno-mobile-v2.png" />
+          <source media="(min-width: 768px)" srcset="assets/images/hero/clipper-esterno-desktop-v2.png" />
+          <img
+            class="hero-slide-image"
+            src="assets/images/hero/clipper-esterno-desktop-v2.png"
+            width="1672"
+            height="941"
+            alt=""
+            fetchpriority="high"
+            decoding="async"
+          />
+        </picture>
+      </div>
+      <div class="hero-slide hero-slide--buffet" data-hero-slide data-slide-index="1">
+        <picture class="hero-slide-picture">
+          <source media="(max-width: 767px)" data-srcset="assets/images/hero/clipper-buffet-mobile.jpg" />
+          <source media="(min-width: 768px)" data-srcset="assets/images/hero/clipper-buffet-desktop.jpg" />
+          <img
+            class="hero-slide-image"
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            data-src="assets/images/hero/clipper-buffet-desktop.jpg"
+            width="1672"
+            height="941"
+            alt=""
+            decoding="async"
+          />
+        </picture>
+      </div>
+      <div class="hero-slide hero-slide--interno" data-hero-slide data-slide-index="2">
+        <picture class="hero-slide-picture">
+          <source media="(max-width: 767px)" data-srcset="assets/images/hero/clipper-interno-mobile.jpg" />
+          <source media="(min-width: 768px)" data-srcset="assets/images/hero/clipper-interno-desktop.jpg" />
+          <img
+            class="hero-slide-image"
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            data-src="assets/images/hero/clipper-interno-desktop.jpg"
+            width="1672"
+            height="940"
+            alt=""
+            decoding="async"
+          />
+        </picture>
+      </div>
+      <div class="hero-slide hero-slide--servizio" data-hero-slide data-slide-index="3">
+        <picture class="hero-slide-picture">
+          <source media="(max-width: 767px)" data-srcset="assets/images/hero/clipper-servizio-mobile.png" />
+          <source media="(min-width: 768px)" data-srcset="assets/images/hero/clipper-servizio-desktop.png" />
+          <img
+            class="hero-slide-image"
+            src="data:image/gif;base64,R0lGODlhAQABAAAAACw="
+            data-src="assets/images/hero/clipper-servizio-desktop.png"
+            width="1672"
+            height="941"
+            alt=""
+            decoding="async"
+          />
+        </picture>
+      </div>
+    </div>
+    <div class="hero-shade"></div>
+
+    <div class="hero-title-wrap">
+      <p class="hero-overline" data-i18n="hero.overline">Ristorante di mare</p>
+      <h1><span class="hero-title-desktop">Il Clipper</span><span class="hero-title-mobile">IL CLIPPER</span></h1>
+      <div class="hero-address">
+        <p>Bogliasco</p>
+        <p>Under the Bridge</p>
+      </div>
+      <p class="hero-hours" data-i18n-html="hero.hours"><span>PRANZO, CENA &amp; CONVIVIALITA'</span> CUCINA LIGURE - PESCE - VINI</p>
+      <div class="hero-actions" aria-label="Azioni principali">
+        <a class="hero-primary" href="#prenota" data-booking-trigger data-context="Prenotazione tavolo">
+          <span data-i18n="cta.bookTable">Prenota un tavolo</span>
+          <svg class="whatsapp-cta-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path class="whatsapp-icon-mark" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.051 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.822 9.822 0 0 1 6.988 2.899 9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.883-9.887 9.883M20.52 3.449A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.946L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.52 3.449"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-socials" aria-label="Link utili Il Clipper">
+      <a class="hero-social-link" href="https://www.instagram.com/clipper_bogliasco?stkn=ZTdsMnYxZDh4aXh3" target="_blank" rel="noreferrer" aria-label="Apri Instagram di Il Clipper">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"></rect><circle cx="12" cy="12" r="3.6"></circle><circle class="instagram-dot" cx="17.2" cy="6.8" r="1.15"></circle></svg>
+        <span>Instagram</span>
+      </a>
+    </div>
+
+    <div class="hero-edge hero-edge-left" data-i18n="hero.edge">Cucina ligure &amp; mare</div>
+    <div class="hero-edge hero-edge-right">44.3796&deg; N · 9.0687&deg; E</div>
+
+    <a class="scroll-cue" href="#ristorante" aria-label="Scopri Il Clipper">
+      <span data-i18n="hero.discover">Scopri Il Clipper</span>
+      <i aria-hidden="true"></i>
+    </a>
+
+  </section>
+
+  <section class="restaurant-section section-dark" id="ristorante">
+    <div class="section-heading reveal">
+      <p class="section-kicker" data-i18n="restaurant.kicker">01 Ristorante</p>
+      <h2 data-i18n="nav.restaurant">Ristorante</h2>
+      <div class="heading-copy">
+        <p data-i18n="restaurant.copy1">Cucina ligure e specialita' di mare in un ristorante accogliente nel cuore di Bogliasco.</p>
+        <p data-i18n="restaurant.copy2">Una tavola semplice, curata e conviviale per pranzo, cena e serate sul Golfo Paradiso.</p>
+        <p class="restaurant-mobile-copy" data-i18n="restaurant.mobileCopy">Cucina ligure e pesce nel cuore di Bogliasco.</p>
+      </div>
+    </div>
+
+    <div class="food-carousel reveal reveal-delay">
+      <div class="food-track" data-food-track tabindex="0" aria-label="Carosello dei piatti di Il Clipper">
+        <figure class="food-card"><img src="assets/images/restaurant/clipper-ristorante-15.png" width="1086" height="1448" loading="lazy" decoding="async" alt="Plateau a tre piani con crostacei, ostriche e agrumi" /><figcaption><span>01</span><p data-i18n="food.catch">Plateau di mare</p></figcaption></figure>
+        <figure class="food-card food-card-offset"><img src="assets/images/restaurant/clipper-ristorante-09.png" width="941" height="1672" loading="lazy" decoding="async" alt="Selezione di crudi di mare, crostacei, tartare e ostriche" /><figcaption><span>02</span><p data-i18n="food.rawSelection">Selezione di crudi</p></figcaption></figure>
+        <figure class="food-card"><img src="assets/images/restaurant/clipper-ristorante-03.jpg" width="997" height="1578" loading="lazy" decoding="async" alt="Ostriche su ghiaccio con limone e fiori" /><figcaption><span>03</span><p data-i18n="food.stockfish">Ostriche e limone</p></figcaption></figure>
+        <figure class="food-card food-card-offset"><img src="assets/images/restaurant/clipper-ristorante-10.png" width="940" height="1674" loading="lazy" decoding="async" alt="Spaghetti alle vongole veraci con prezzemolo" /><figcaption><span>04</span><p data-i18n="food.clams">Spaghetti alle vongole</p></figcaption></figure>
+        <figure class="food-card"><img src="assets/images/restaurant/clipper-ristorante-aragosta.png" width="1122" height="1402" loading="lazy" decoding="async" alt="Pasta all'aragosta servita su piatti eleganti" /><figcaption><span>05</span><p>Aragosta e pasta</p></figcaption></figure>
+        <figure class="food-card food-card-offset"><img src="assets/images/restaurant/clipper-ristorante-11.png" width="1086" height="1448" loading="lazy" decoding="async" alt="Spaghetti alla crema di pistacchio con gambero rosso" /><figcaption><span>06</span><p data-i18n="food.pistachioPasta">Pistacchio e gambero</p></figcaption></figure>
+        <figure class="food-card"><img src="assets/images/restaurant/clipper-ristorante-07.png" width="1122" height="1402" loading="lazy" decoding="async" alt="Filetto di pesce su crema verde con fiori eduli" /><figcaption><span>07</span><p data-i18n="food.fish">Filetto delicato</p></figcaption></figure>
+        <figure class="food-card food-card-offset"><img src="assets/images/restaurant/clipper-ristorante-tagliata.png" width="1122" height="1402" loading="lazy" decoding="async" alt="Tagliata di manzo con rucola, pomodoro e grana" /><figcaption><span>08</span><p>Tagliata, rucola e grana</p></figcaption></figure>
+        <figure class="food-card"><img src="assets/images/restaurant/clipper-ristorante-12.png" width="1086" height="1448" loading="lazy" decoding="async" alt="Insalata di mare con crostacei, molluschi e prezzemolo" /><figcaption><span>09</span><p data-i18n="food.seafoodSalad">Insalata di mare</p></figcaption></figure>
+        <figure class="food-card food-card-offset"><img src="assets/images/restaurant/clipper-ristorante-13.png" width="1086" height="1448" loading="lazy" decoding="async" alt="Polpo arrostito con crema di patate e chips croccanti" /><figcaption><span>10</span><p data-i18n="food.octopus">Polpo arrostito</p></figcaption></figure>
+        <figure class="food-card"><img src="assets/images/restaurant/clipper-ristorante-14.png" width="1086" height="1448" loading="lazy" decoding="async" alt="Tris di tartare di pesce con frutti rossi e salse" /><figcaption><span>11</span><p data-i18n="food.tartare">Tris di tartare</p></figcaption></figure>
+        <figure class="food-card food-card-offset"><img src="assets/images/restaurant/clipper-ristorante-perrier-jouet.png" width="1024" height="1536" loading="lazy" decoding="async" alt="Bottiglia di Champagne Perrier-Jouet Blanc de Blancs e calice" /><figcaption><span>12</span><p>Champagne Perrier-Jouet</p></figcaption></figure>
+      </div>
+
+      <div class="carousel-footer">
+        <p><span data-food-current>01</span> / 12</p>
+        <div class="carousel-arrows">
+          <button type="button" data-food-prev aria-label="Piatto precedente"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4"></path><path d="m10 6-6 6 6 6"></path></svg></button>
+          <button type="button" data-food-next aria-label="Piatto successivo"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16"></path><path d="m14 6 6 6-6 6"></path></svg></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="center-cta reveal">
+      <a class="outline-button" href="#carta-menu" data-card-trigger="food">
+        <span data-i18n="cta.menu">Scopri il nostro menu</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
+      </a>
+      <a class="outline-button" href="#carta-vini" data-card-trigger="wine">
+        <span data-i18n="cta.wine">Carta dei Vini</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
+      </a>
+    </div>
+  </section>
+
+  <section class="location-section" id="location">
+    <div class="section-heading location-heading reveal">
+      <p class="section-kicker" data-i18n="location.kicker">02 Location</p>
+      <h2 data-i18n="nav.location">Location</h2>
+      <div class="heading-copy">
+        <p data-i18n="location.copy1">Via dei Mille 3, nel centro di Bogliasco, a pochi passi dal mare e dal borgo.</p>
+        <p data-i18n="location.copy2">Sala, atmosfera informale e accoglienza ligure per una pausa dopo il mare o una cena in Riviera.</p>
+      </div>
+    </div>
+
+    <div class="location-carousel reveal reveal-delay">
+      <div class="location-track" data-location-track tabindex="0" aria-label="Carosello degli ambienti di Il Clipper">
+        <figure class="location-card"><img src="assets/images/location/clipper-location-01-v2.png" width="1122" height="1402" loading="lazy" decoding="async" alt="Ingresso esterno del ristorante Il Clipper con infissi antracite" /><figcaption><span>01</span><p data-i18n="location.front">L'ingresso</p></figcaption></figure>
+        <figure class="location-card"><img src="assets/images/location/clipper-location-02.jpg" width="1448" height="1086" loading="lazy" decoding="async" alt="Sala interna del ristorante con tavoli apparecchiati" /><figcaption><span>02</span><p data-i18n="location.room">La sala</p></figcaption></figure>
+        <figure class="location-card"><img src="assets/images/location/clipper-location-03-v2.png" width="1091" height="1441" loading="lazy" decoding="async" alt="Dehor esterno coperto con infissi antracite" /><figcaption><span>03</span><p data-i18n="location.table">Il dehor</p></figcaption></figure>
+        <figure class="location-card"><img src="assets/images/location/clipper-location-09.png" width="1086" height="1448" loading="lazy" decoding="async" alt="Sala del ristorante apparecchiata per un evento" /><figcaption><span>04</span><p data-i18n="location.terrace1">La sala eventi</p></figcaption></figure>
+        <figure class="location-card"><img src="assets/images/location/clipper-location-oceano.png" width="1086" height="1448" loading="lazy" decoding="async" alt="Tavola elegante apparecchiata con vista sul mare" /><figcaption><span>05</span><p>La tavola sul mare</p></figcaption></figure>
+        <figure class="location-card"><img src="assets/images/location/clipper-location-07.png" width="1086" height="1448" loading="lazy" decoding="async" alt="Installazione floreale sospesa nella sala del ristorante" /><figcaption><span>06</span><p data-i18n="location.terrace3">I dettagli</p></figcaption></figure>
+        <figure class="location-card"><img src="assets/images/location/clipper-location-08.png" width="1024" height="1536" loading="lazy" decoding="async" alt="Sala con tavolo apparecchiato e parete delle maglie Sampdoria" /><figcaption><span>07</span><p data-i18n="location.gallery">La parete Sampdoria</p></figcaption></figure>
+      </div>
+
+      <div class="carousel-footer carousel-footer-dark">
+        <p><span data-location-current>01</span> / 07</p>
+        <div class="carousel-arrows">
+          <button type="button" data-location-prev aria-label="Ambiente precedente"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4"></path><path d="m10 6-6 6 6 6"></path></svg></button>
+          <button type="button" data-location-next aria-label="Ambiente successivo"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16"></path><path d="m14 6 6 6-6 6"></path></svg></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews-section" id="recensioni">
+    <div class="reviews-intro reveal">
+      <div>
+        <p class="section-kicker" data-i18n="reviews.kicker">03 Recensioni</p>
+        <h2 data-i18n="reviews.title">Cosa dicono di noi</h2>
+      </div>
+    </div>
+
+    <div class="review-grid reveal reveal-delay">
+      <article class="review-card"><div class="stars" data-i18n="reviews.cardLabel1">Cucina</div><blockquote data-i18n="reviews.quote1">Pesce e piatti liguri pensati per una pausa di gusto a Bogliasco.</blockquote><p data-i18n="reviews.author1">Il Clipper · Ristorante</p></article>
+      <article class="review-card"><div class="stars" data-i18n="reviews.cardLabel2">Accoglienza</div><blockquote data-i18n="reviews.quote2">Servizio diretto, ambiente conviviale e tavoli pronti per pranzo e cena.</blockquote><p data-i18n="reviews.author2">Bogliasco · GE</p></article>
+      <article class="review-card"><div class="stars" data-i18n="reviews.cardLabel3">Golfo Paradiso</div><blockquote data-i18n="reviews.quote3">Una tappa semplice e generosa tra mare, borgo e profumi della Riviera ligure.</blockquote><p data-i18n="reviews.author3">Via dei Mille 3</p></article>
+    </div>
+
+    <div class="reviews-link reveal">
+      <a class="review-text-link" href="https://www.tripadvisor.it/Restaurant_Review-g678225-d2251277-Reviews-Ristorante_Clipper-Bogliasco_Italian_Riviera_Liguria.html" target="_blank" rel="noreferrer">
+        <span data-i18n="reviews.read">Leggi le recensioni</span><svg class="tripadvisor-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M2.8 10.5c4.05-2.12 8.46-3.18 13.2-3.18s9.15 1.06 13.2 3.18"></path><path d="M3.78 10.62h5.5"></path><path d="M22.72 10.62h5.5"></path><circle cx="10.1" cy="18" r="6.6"></circle><circle cx="21.9" cy="18" r="6.6"></circle><circle cx="10.1" cy="18" r="2.16"></circle><circle cx="21.9" cy="18" r="2.16"></circle><path d="m14.08 22.64 1.92 2.24 1.92-2.24"></path></svg>
+      </a>
+      <a class="review-cta" href="https://www.tripadvisor.it/UserReviewEdit-g678225-d2251277-Ristorante_Clipper-Bogliasco_Italian_Riviera_Liguria.html" target="_blank" rel="noreferrer">
+        <span data-i18n="reviews.leave">Lascia una recensione</span><svg class="tripadvisor-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M2.8 10.5c4.05-2.12 8.46-3.18 13.2-3.18s9.15 1.06 13.2 3.18"></path><path d="M3.78 10.62h5.5"></path><path d="M22.72 10.62h5.5"></path><circle cx="10.1" cy="18" r="6.6"></circle><circle cx="21.9" cy="18" r="6.6"></circle><circle cx="10.1" cy="18" r="2.16"></circle><circle cx="21.9" cy="18" r="2.16"></circle><path d="m14.08 22.64 1.92 2.24 1.92-2.24"></path></svg>
+      </a>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contatti">
+    <div class="contact-panel reveal">
+      <p class="section-kicker" data-i18n="contacts.kicker">04 Contatti</p>
+      <h2 data-i18n="contacts.title">Contatti</h2>
+
+      <div class="contact-list">
+        <div>
+          <h3 data-i18n="contacts.where">Dove siamo</h3>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Il%20Clipper%20Via%20dei%20Mille%203%20Bogliasco" target="_blank" rel="noreferrer">
+            Il Clipper<br />Via dei Mille 3, 16031 Bogliasco GE <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
+          </a>
+        </div>
+        <div>
+          <h3 data-i18n="contacts.hoursLabel">Orari</h3>
+          <p data-i18n-html="contacts.hours">Pranzo e cena<br />tutti i giorni</p>
+        </div>
+        <div class="contact-phone-cell">
+          <h3 data-i18n="contacts.phone">Telefono</h3>
+          <div class="contact-phone-row">
+            <a class="contact-phone-link" href="tel:+390103477880">+39 010 347 7880</a>
+            <a class="contact-phone-link" href="tel:+393662457460">+39 366 245 7460</a>
+          </div>
+        </div>
+        <div>
+          <h3 data-i18n="contacts.whatsapp">WhatsApp</h3>
+          <a href="#prenota" data-booking-trigger data-context="Prenotazione tavolo">Richiedi una prenotazione <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg></a>
+        </div>
+      </div>
+
+      <div class="contact-actions">
+        <a class="contact-book" href="#prenota" data-booking-trigger data-context="Prenotazione tavolo">
+          <span data-i18n="cta.bookTable">Prenota un tavolo</span>
+          <svg class="whatsapp-cta-icon" viewBox="0 0 24 24" aria-hidden="true"><path class="whatsapp-icon-mark" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.051 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.822 9.822 0 0 1 6.988 2.899 9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.883-9.887 9.883M20.52 3.449A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.946L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.52 3.449"></path></svg>
+        </a>
+        <a class="contact-book contact-call" href="tel:+390103477880">
+          <span data-i18n="cta.call">Chiama ora</span>
+          <svg class="phone-line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.3 16.9v2.35a2.1 2.1 0 0 1-2.28 2.1 20.1 20.1 0 0 1-8.76-3.12 19.7 19.7 0 0 1-6.08-6.08 20.1 20.1 0 0 1-3.12-8.8A2.1 2.1 0 0 1 3.15 1.1h2.35a2.1 2.1 0 0 1 2.08 1.8c.13 1 .36 1.98.7 2.92a2.1 2.1 0 0 1-.48 2.17L6.8 9a16.1 16.1 0 0 0 7.2 7.2l1.01-1a2.1 2.1 0 0 1 2.17-.49c.94.35 1.92.58 2.92.71a2.1 2.1 0 0 1 1.2 1.48Z"></path></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="map-wrap reveal reveal-delay">
+      <div class="map-frame">
+        <iframe title="Mappa di Il Clipper Bogliasco" data-map-src="https://www.google.com/maps?q=Il%20Clipper%2C%20Via%20dei%20Mille%203%2C%2016031%20Bogliasco%20GE&amp;z=18&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-veiling" aria-hidden="true"></div>
+        <div class="map-consent" data-map-consent>
+          <p data-i18n="map.notice">La mappa di Google viene caricata solo dopo il consenso ai servizi esterni.</p>
+          <button type="button" data-map-load data-i18n="map.load">Carica la mappa</button>
+        </div>
+        <div class="map-label">
+          <span data-i18n="contacts.mapLabel">Bogliasco · Golfo Paradiso</span>
+          <strong>Il Clipper</strong>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Il%20Clipper%20Via%20dei%20Mille%203%20Bogliasco" target="_blank" rel="noreferrer">
+            <span data-i18n="contacts.openMap">Apri su Google Maps</span>
+            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-main">
+    <a class="footer-logo footer-brand-mark" href="#top" aria-label="Il Clipper, torna all'inizio">
+      <img class="brand-logo-img" src="assets/images/brand/clipper-logo-transparent.png" width="1240" height="620" alt="Il Clipper" loading="lazy" decoding="async" />
+    </a>
+    <p data-i18n-html="footer.tagline">La cucina ligure,<br />il respiro del mare.</p>
+    <div class="footer-socials" aria-label="Link Il Clipper">
+      <a class="footer-social-link" href="tel:+390103477880" aria-label="Chiama Il Clipper"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.3 16.9v2.35a2.1 2.1 0 0 1-2.28 2.1 20.1 20.1 0 0 1-8.76-3.12 19.7 19.7 0 0 1-6.08-6.08 20.1 20.1 0 0 1-3.12-8.8A2.1 2.1 0 0 1 3.15 1.1h2.35a2.1 2.1 0 0 1 2.08 1.8c.13 1 .36 1.98.7 2.92a2.1 2.1 0 0 1-.48 2.17L6.8 9a16.1 16.1 0 0 0 7.2 7.2l1.01-1a2.1 2.1 0 0 1 2.17-.49c.94.35 1.92.58 2.92.71a2.1 2.1 0 0 1 1.2 1.48Z"></path></svg><span>Telefono</span></a>
+      <a class="footer-social-link" href="https://www.instagram.com/clipper_bogliasco?stkn=ZTdsMnYxZDh4aXh3" target="_blank" rel="noreferrer" aria-label="Apri Instagram di Il Clipper"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="4.5"></rect><circle cx="12" cy="12" r="3.6"></circle><circle class="instagram-dot" cx="17.2" cy="6.8" r="1.15"></circle></svg><span>Instagram</span></a>
+    </div>
+    <a href="#top"><span data-i18n="footer.top">Torna su</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V4"></path><path d="m6 10 6-6 6 6"></path></svg></a>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span data-year></span> RISTORANTE IL CLIPPER · Bogliasco</p>
+    <p>Gestito da I Miei Nani Srl · P. IVA/C.F. 01993010998 · REA GE-451107 · Cap. Soc. € 10.000,00 i.v.</p>
+    <p>Sede legale: Corso Europa 1726/3, Genova · <a href="mailto:imieinani@pec.it">imieinani@pec.it</a></p>
+  </div>
+  <div class="footer-legal-links" aria-label="Informazioni legali">
+    <button type="button" data-legal-trigger="privacy" data-i18n="legal.privacy">Privacy</button>
+    <button type="button" data-legal-trigger="cookies" data-i18n="legal.cookies">Cookie</button>
+    <button type="button" data-legal-trigger="notes" data-i18n="legal.notes">Note legali</button>
+    <button type="button" data-cookie-manage data-i18n="legal.manageCookies">Gestisci cookie</button>
+  </div>
+</footer>
+
+<div class="card-modal" data-card-modal aria-hidden="true" hidden>
+  <section class="card-dialog" role="dialog" aria-modal="true" aria-labelledby="card-title" tabindex="-1">
+    <header class="card-header">
+      <span aria-hidden="true"></span>
+      <div class="card-tabs" role="tablist" aria-label="Seleziona la carta">
+        <button class="is-active" type="button" role="tab" aria-selected="true" data-card-tab="food" data-i18n="card.food">Menu</button>
+        <button type="button" role="tab" aria-selected="false" data-card-tab="wine" data-i18n="card.wine">Carta dei Vini</button>
+      </div>
+      <button class="card-close" type="button" aria-label="Chiudi la carta" data-card-close><span></span><span></span></button>
     </header>
 
-    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-labelledby="mobile-menu-title" aria-hidden="true">
-      <button class="menu-backdrop" type="button" aria-label="Chiudi il menu" data-menu-close></button>
-      <div class="menu-panel" tabindex="-1">
-        <p class="menu-panel-kicker" id="mobile-menu-title">ETRA · Genova</p>
-        <nav aria-label="Navigazione mobile">
-          <a href="#ristorante"><span>01</span><b data-i18n="nav.restaurant">Ristorante</b><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19"></path><path d="M10 19h9v-9"></path></svg></a>
-          <a href="#galleria"><span>02</span><b data-i18n="nav.gallery">Galleria</b><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19"></path><path d="M10 19h9v-9"></path></svg></a>
-          <a href="#recensioni"><span>03</span><b data-i18n="nav.reviews">Recensioni</b><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19"></path><path d="M10 19h9v-9"></path></svg></a>
-          <a href="#contatti"><span>04</span><b data-i18n="nav.contacts">Contatti</b><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5 19 19"></path><path d="M10 19h9v-9"></path></svg></a>
-        </nav>
-        <a class="menu-book" href="https://widget.thefork.com/it/4495685f-8914-46d8-9fa0-df415a9618d3" target="_blank" rel="noreferrer">
-          <span data-i18n="cta.bookTable">Prenota un tavolo</span>
-          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
-        </a>
-        <div class="mobile-menu-meta">
-          <p>Fine dining · Arte<br />Piazza De Ferrari, Genova</p>
-          <div>
-            <a href="tel:+393311014699">+39 331 101 4699</a>
-            <a href="https://www.google.com/maps/search/?api=1&amp;query=ETRA%20Piazza%20Raffaele%20De%20Ferrari%204%20Genova" target="_blank" rel="noreferrer">Maps <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg></a>
-            <a href="mailto:info@etra.art">Email <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg></a>
-          </div>
-        </div>
+    <div class="card-body">
+      <div class="card-intro">
+        <p class="section-kicker" data-card-kicker>Il Clipper · Cucina ligure</p>
+        <img class="card-menu-logo" src="assets/images/brand/clipper-logo-transparent.png" width="1240" height="620" alt="Clipper, restaurant - under the bridge" />
+        <h2 id="card-title" data-card-title>Il nostro <em>menu.</em></h2>
+        <p data-card-description>Proposte di mare e di terra, cucina ligure e specialita' del ristorante. La carta puo' variare secondo stagione e disponibilita'.</p>
       </div>
+      <div class="catalog" data-card-content></div>
+      <p class="catalog-note" data-i18n="card.note">In caso di allergie o intolleranze, prima di ordinare informa il personale di sala.</p>
     </div>
+  </section>
+</div>
 
-    <main id="main">
-      <section class="hero" id="top" aria-label="ETRA, ristorante a Genova">
-        <div class="hero-carousel" data-hero-carousel aria-live="off">
-          <picture class="hero-picture hero-slide is-active" data-hero-slide data-position="location">
-            <source media="(max-width: 760px)" srcset="assets/hero-location-mobile.png" />
-            <img class="hero-image" src="assets/hero-location-desktop.png" alt="La sala di ETRA, con pareti nere, opere illuminate e tavoli apparecchiati" width="3344" height="1882" fetchpriority="high" />
-          </picture>
-          <picture class="hero-picture hero-slide" data-hero-slide data-position="gesture">
-            <source media="(max-width: 760px)" data-srcset="assets/hero-gesture-mobile.png" />
-            <img class="hero-image" data-src="assets/hero-gesture-desktop.png" alt="La mano dello chef versa una salsa verde su ravioli neri" width="3344" height="1882" loading="lazy" />
-          </picture>
-          <picture class="hero-picture hero-slide" data-hero-slide data-position="creativity">
-            <source media="(max-width: 760px)" data-srcset="assets/hero-creativity-mobile.png" />
-            <img class="hero-image" data-src="assets/hero-creativity-desktop.png" alt="Piatto creativo composto con fiori e ortaggi colorati su marmo nero" width="3344" height="1882" loading="lazy" />
-          </picture>
-          <picture class="hero-picture hero-slide" data-hero-slide data-position="dessert">
-            <source media="(max-width: 760px)" data-srcset="assets/hero-dessert-mobile.png" />
-            <img class="hero-image" data-src="assets/hero-dessert-desktop.png" alt="Dessert viola e rosa servito su un piatto bianco" width="3344" height="1882" loading="lazy" />
-          </picture>
-        </div>
-        <div class="hero-shade"></div>
+<div class="booking-modal" data-booking-modal aria-hidden="true" hidden>
+  <button class="booking-backdrop" type="button" aria-label="Chiudi il form" data-booking-close></button>
+  <section class="booking-dialog" role="dialog" aria-modal="true" aria-labelledby="booking-title" tabindex="-1">
+    <button class="booking-close" type="button" aria-label="Chiudi" data-booking-close><span></span><span></span></button>
+    <p class="section-kicker" data-i18n="form.kicker">Scrivici su WhatsApp</p>
+    <h2 id="booking-title" data-i18n-html="form.title">Raccontaci<br /><em>cosa desideri.</em></h2>
+    <p class="booking-intro" data-i18n="form.intro">Compila i campi: prepareremo il messaggio e apriremo WhatsApp per permetterti di inviarlo.</p>
 
-        <div class="hero-title-wrap">
-          <p class="hero-overline" data-i18n="hero.overline">Ristorante fine dining</p>
-          <div class="hero-dynamic-title"><h1 data-hero-title>L'arte dell'ospitalit&agrave;.</h1></div>
-          <p class="hero-subtitle" data-i18n="hero.subtitle">Un'esperienza gastronomica nel cuore di Genova.</p>
-          <div class="hero-actions" aria-label="Azioni principali">
-            <a class="hero-primary" href="https://etra.bonkdo.com/it/?embed=true&amp;hide_create_money_pot=false&amp;hide_footer=false&amp;hide_giftcards=false&amp;hide_group_payment=false&amp;hide_main_title_description=false&amp;hide_shared_gifts_header=false&amp;hide_vouchers=false&amp;hide_whychooseus=false&amp;hide_whole_shared_gifts=false" target="_blank" rel="noreferrer">
-              <span data-i18n="cta.giftCard">Gift Card</span>
-              <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
-            </a>
-            <a class="hero-secondary hero-secondary-desktop" href="https://widget.thefork.com/it/4495685f-8914-46d8-9fa0-df415a9618d3" target="_blank" rel="noreferrer" data-i18n="cta.book">Prenota</a>
-            <a class="hero-secondary hero-secondary-mobile" href="#whatsapp" data-booking-trigger data-context="Prenotazione tavolo">
-              <svg class="hero-mobile-whatsapp" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"></path></svg>
-              <span data-i18n="cta.book">Prenota</span>
-            </a>
-          </div>
-        </div>
-
-        <a class="hero-social-link hero-mobile-instagram" href="https://www.instagram.com/etra.ristorante?stkn=bTh3MGl1aDNxc3dh" target="_blank" rel="noreferrer" aria-label="Segui ETRA su Instagram">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.5" cy="6.7" r="0.8" class="instagram-dot"></circle></svg>
-          <span>Instagram</span>
-        </a>
-
-        <div class="hero-socials" aria-label="Link utili ETRA">
-          <a class="hero-social-link" href="https://www.instagram.com/etra.ristorante?stkn=bTh3MGl1aDNxc3dh" target="_blank" rel="noreferrer" aria-label="Segui ETRA su Instagram">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4.2"></circle><circle cx="17.5" cy="6.7" r="0.8" class="instagram-dot"></circle></svg>
-            <span>Instagram</span>
-          </a>
-          <a class="hero-social-link" href="#whatsapp" data-booking-trigger data-context="Richiesta WhatsApp" aria-label="Scrivi a ETRA su WhatsApp">
-            <svg class="hero-whatsapp-icon" viewBox="0 0 24 24" aria-hidden="true"><path class="whatsapp-bubble" d="M20.5 11.8a8.5 8.5 0 0 1-12.6 7.4l-4.4 1.3 1.4-4.2A8.5 8.5 0 1 1 20.5 11.8Z"></path><path class="whatsapp-handset" d="M8.05 7.05c.34-.34.85-.43 1.27-.2l1.52.82c.45.24.65.77.47 1.25l-.55 1.45c-.12.3-.07.65.13.91.55.73 1.2 1.39 1.94 1.94.26.2.6.25.91.13l1.45-.55c.48-.18 1.01.02 1.25.47l.82 1.52c.23.42.14.93-.2 1.27l-.87.87c-.7.7-1.75.92-2.66.55a12.35 12.35 0 0 1-7-7c-.37-.91-.15-1.96.55-2.66l.87-.87Z"></path></svg>
-            <span>WhatsApp</span>
-          </a>
-        </div>
-
-        <div class="hero-edge hero-edge-left" data-i18n="hero.edge">Cucina e arte in dialogo</div>
-        <div class="hero-edge hero-edge-right">44.4074° N · 8.9339° E</div>
-
-        <a class="scroll-cue" href="#ristorante" aria-label="Scopri ETRA">
-          <span data-i18n="hero.discover">Scopri ETRA</span>
-          <i aria-hidden="true"></i>
-        </a>
-      </section>
-
-      <section class="restaurant-section section-dark" id="ristorante">
-        <div class="section-heading reveal">
-          <p class="section-kicker" data-i18n="restaurant.kicker">01 Ristorante</p>
-          <h2 data-i18n="nav.restaurant">Ristorante</h2>
-          <div class="heading-copy">
-            <p data-i18n="restaurant.copy1">Un ristorante fine dining ospitato nel Palazzo Doria De Fornari, dove cucina contemporanea e arte condividono la stessa scena.</p>
-            <p data-i18n="restaurant.copy2">La proposta dello chef Davide Cannavino attraversa tecnica, materia prima e micro-stagionalita in percorsi gastronomici essenziali e creativi.</p>
-            <p class="restaurant-mobile-copy" data-i18n="restaurant.mobileCopy">Cucina creativa e arte contemporanea nel cuore di Genova.</p>
-          </div>
-        </div>
-
-        <div class="food-carousel reveal reveal-delay">
-          <div class="food-track" data-food-track tabindex="0" aria-label="Carosello dei piatti di ETRA">
-            <figure class="food-card"><img src="assets/restaurant-01.png?v=14" alt="Selezione di pani e piccoli assaggi ETRA" width="1122" height="1402" loading="eager" fetchpriority="high" decoding="async" /><figcaption><span>01</span><p data-i18n="food.one">Materia</p></figcaption></figure>
-            <figure class="food-card food-card-offset"><img src="assets/restaurant-02.png?v=14" alt="Piccoli assaggi presentati su legno e ceramica" width="1254" height="1254" loading="eager" decoding="async" /><figcaption><span>02</span><p data-i18n="food.two">Tecnica</p></figcaption></figure>
-            <figure class="food-card"><img src="assets/restaurant-03.png?v=14" alt="Preparazione rossa con fiori edibili" width="1254" height="1254" loading="eager" decoding="async" /><figcaption><span>03</span><p data-i18n="food.three">Contrasto</p></figcaption></figure>
-            <figure class="food-card food-card-offset"><img src="assets/restaurant-04.png?v=14" alt="Preparazione verde con erbe fresche" width="1254" height="1254" loading="eager" decoding="async" /><figcaption><span>04</span><p data-i18n="food.four">Vegetale</p></figcaption></figure>
-            <figure class="food-card"><img src="assets/restaurant-05.png?v=14" alt="Piatto geometrico decorato con erbe e fiori" width="1254" height="1254" loading="eager" decoding="async" /><figcaption><span>05</span><p data-i18n="food.five">Geometria</p></figcaption></figure>
-            <figure class="food-card food-card-offset"><img src="assets/restaurant-06.png?v=14" alt="Portata glassata con foglie verdi" width="1254" height="1254" loading="eager" decoding="async" /><figcaption><span>06</span><p data-i18n="food.six">Cottura</p></figcaption></figure>
-            <figure class="food-card"><img src="assets/restaurant-07.png?v=14" alt="Assaggio dorato presentato in un cofanetto nero" width="1254" height="1254" loading="eager" decoding="async" /><figcaption><span>07</span><p data-i18n="food.seven">Sorpresa</p></figcaption></figure>
-            <figure class="food-card food-card-offset"><img src="assets/restaurant-08.png?v=14" alt="Piatto in ceramica con erbe e piccoli assaggi" width="1254" height="1254" loading="eager" decoding="async" /><figcaption><span>08</span><p data-i18n="food.eight">Equilibrio</p></figcaption></figure>
-          </div>
-
-          <div class="carousel-footer">
-            <p><span data-food-current>01</span> / 08</p>
-            <div class="carousel-arrows">
-              <button type="button" data-food-prev aria-label="Piatto precedente"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4"></path><path d="m10 6-6 6 6 6"></path></svg></button>
-              <button type="button" data-food-next aria-label="Piatto successivo"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16"></path><path d="m14 6 6 6-6 6"></path></svg></button>
-            </div>
-          </div>
-        </div>
-
-        <div class="center-cta reveal">
-          <a class="outline-button" href="#carta-menu" data-card-trigger="food">
-            <span data-i18n="cta.menu">Le nostre proposte</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
-          </a>
-          <a class="outline-button" href="#carta-vini" data-card-trigger="wine">
-            <span data-i18n="cta.wine">Carta dei vini</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
-          </a>
-        </div>
-
-      </section>
-
-      <section class="location-section" id="galleria">
-        <div class="section-heading location-heading reveal">
-          <p class="section-kicker" data-i18n="gallery.kicker">02 Galleria</p>
-          <h2 data-i18n="nav.gallery">Galleria</h2>
-          <div class="heading-copy">
-            <p data-i18n="gallery.copy1">ETRA nasce come spazio di meraviglia: un ambiente scuro, minimale, attraversato da opere d'arte contemporanea in continua evoluzione.</p>
-            <p data-i18n="gallery.copy2">Sala, opere e dettagli raccontano un luogo costruito per accogliere cucina, materia e visione.</p>
-          </div>
-        </div>
-
-        <div class="location-carousel reveal reveal-delay">
-          <div class="location-track" data-location-track tabindex="0" aria-label="Carosello galleria ETRA">
-            <figure class="location-card"><img src="assets/gallery-01.png?v=14" alt="Sala principale di ETRA con opere luminose" width="2172" height="1629" loading="eager" fetchpriority="high" decoding="async" /><figcaption><span>01</span><p data-i18n="gallery.one">Sala</p></figcaption></figure>
-            <figure class="location-card"><img src="assets/gallery-02.png?v=14" alt="Installazione di simboli sopra la cucina a vista" width="1629" height="2172" loading="eager" decoding="async" /><figcaption><span>02</span><p data-i18n="gallery.two">Segni</p></figcaption></figure>
-            <figure class="location-card"><img src="assets/gallery-03.png?v=14" alt="Tavolo di ETRA e grande opera contemporanea" width="2050" height="1726" loading="eager" decoding="async" /><figcaption><span>03</span><p data-i18n="gallery.three">Opere</p></figcaption></figure>
-            <figure class="location-card"><img src="assets/gallery-04.png?v=14" alt="Tavolo raccolto tra due installazioni luminose" width="2061" height="1718" loading="eager" decoding="async" /><figcaption><span>04</span><p data-i18n="gallery.four">Intimita</p></figcaption></figure>
-          </div>
-
-          <div class="carousel-footer carousel-footer-dark">
-            <p><span data-location-current>01</span> / 04</p>
-            <div class="carousel-arrows">
-              <button type="button" data-location-prev aria-label="Immagine precedente"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4"></path><path d="m10 6-6 6 6 6"></path></svg></button>
-              <button type="button" data-location-next aria-label="Immagine successiva"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16"></path><path d="m14 6 6 6-6 6"></path></svg></button>
-            </div>
-          </div>
-        </div>
-
-        <a class="mobile-gallery-gift" href="https://etra.bonkdo.com/it/?embed=true&amp;hide_create_money_pot=false&amp;hide_footer=false&amp;hide_giftcards=false&amp;hide_group_payment=false&amp;hide_main_title_description=false&amp;hide_shared_gifts_header=false&amp;hide_vouchers=false&amp;hide_whychooseus=false&amp;hide_whole_shared_gifts=false" target="_blank" rel="noreferrer">
-          <span data-i18n="cta.giftCard">Gift Card</span>
-          <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
-        </a>
-      </section>
-
-      <section class="reviews-section" id="recensioni">
-        <div class="reviews-intro reveal">
-          <div>
-            <p class="section-kicker" data-i18n="reviews.kicker">03 Recensioni</p>
-            <h2 data-i18n="reviews.title">Cosa dicono di noi</h2>
-          </div>
-          <div class="rating-block">
-            <strong>4,9</strong>
-            <span>/5</span>
-            <p data-i18n="reviews.rating">Tripadvisor</p>
-          </div>
-        </div>
-
-        <div class="review-grid reveal reveal-delay">
-          <article class="review-card">
-            <div class="stars" data-i18n="reviews.cardLabel1">Michelin</div>
-            <blockquote data-i18n="reviews.quote1">Una cucina distinta da curiosita, brio e precisione tecnica, articolata in tre percorsi degustazione.</blockquote>
-            <p data-i18n="reviews.author1">Guida MICHELIN</p>
-          </article>
-          <article class="review-card">
-            <div class="stars" data-i18n="reviews.cardLabel2">Fine dining</div>
-            <blockquote data-i18n="reviews.quote2">Un ambiente nero, minimale e immersivo dove cucina e galleria convivono nella stessa esperienza.</blockquote>
-            <p data-i18n="reviews.author2">ETRA · Genova</p>
-          </article>
-          <article class="review-card">
-            <div class="stars" data-i18n="reviews.cardLabel3">Ospitalita</div>
-            <blockquote data-i18n="reviews.quote3">Nel cuore di Piazza De Ferrari, un percorso gastronomico contemporaneo e personale.</blockquote>
-            <p data-i18n="reviews.author3">Piazza De Ferrari 4</p>
-          </article>
-        </div>
-
-        <div class="reviews-link reveal">
-          <a class="review-text-link" href="https://www.tripadvisor.it/Restaurant_Review-g187823-d27138349-Reviews-Etra-Genoa_Italian_Riviera_Liguria.html" target="_blank" rel="noreferrer">
-            <span data-i18n="reviews.read">Leggi le recensioni</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
-          </a>
-          <a class="review-cta" href="https://www.tripadvisor.it/UserReviewEdit-g187823-d27138349-Etra-Genoa_Italian_Riviera_Liguria.html" target="_blank" rel="noreferrer">
-            <span data-i18n="reviews.leave">Lascia una recensione</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
-          </a>
-        </div>
-      </section>
-
-      <section class="contact-section" id="contatti">
-        <div class="contact-panel reveal">
-          <p class="section-kicker" data-i18n="contacts.kicker">04 Contatti</p>
-          <h2 data-i18n="contacts.title">Contatti</h2>
-
-          <div class="contact-list">
-            <div>
-              <h3 data-i18n="contacts.where">Dove siamo</h3>
-              <a href="https://www.google.com/maps/search/?api=1&amp;query=ETRA%20Piazza%20Raffaele%20De%20Ferrari%204%20Genova" target="_blank" rel="noreferrer">
-                ETRA<br />Palazzo Doria de Fornari, Piazza Raffaele De Ferrari 4, 16121 Genova <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
-              </a>
-            </div>
-            <div>
-              <h3 data-i18n="contacts.hoursLabel">Orari</h3>
-              <p data-i18n-html="contacts.hours">Martedi - Domenica<br />19:30 - 22:00<br />Lunedi chiuso</p>
-            </div>
-            <div>
-              <h3 data-i18n="contacts.email">Email</h3>
-              <a href="mailto:info@etra.art">info@etra.art</a>
-            </div>
-            <div class="contact-phone-cell">
-              <h3 data-i18n="contacts.phone">Telefono</h3>
-              <div class="contact-phone-row">
-                <a class="contact-phone-link" href="tel:+393311014699">+39 331 101 4699</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact-actions">
-            <a class="contact-book" href="https://widget.thefork.com/it/4495685f-8914-46d8-9fa0-df415a9618d3" target="_blank" rel="noreferrer">
-              <span data-i18n="cta.bookTable">Prenota un tavolo</span>
-              <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
-            </a>
-            <a class="contact-book contact-call" href="tel:+393311014699">
-              <span data-i18n="cta.call">Chiama ora</span>
-              <svg class="phone-line-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.3 16.9v2.35a2.1 2.1 0 0 1-2.28 2.1 20.1 20.1 0 0 1-8.76-3.12 19.7 19.7 0 0 1-6.08-6.08 20.1 20.1 0 0 1-3.12-8.8A2.1 2.1 0 0 1 3.15 1.1h2.35a2.1 2.1 0 0 1 2.08 1.8c.13 1 .36 1.98.7 2.92a2.1 2.1 0 0 1-.48 2.17L6.8 9a16.1 16.1 0 0 0 7.2 7.2l1.01-1a2.1 2.1 0 0 1 2.17-.49c.94.35 1.92.58 2.92.71a2.1 2.1 0 0 1 1.2 1.48Z"></path></svg>
-            </a>
-          </div>
-        </div>
-
-        <div class="map-wrap reveal reveal-delay">
-          <div class="map-frame map-loaded">
-            <iframe title="Mappa di ETRA Genova" src="https://www.google.com/maps?q=ETRA%2C%20Piazza%20Raffaele%20De%20Ferrari%204%2C%2016121%20Genova&amp;z=18&amp;t=k&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-            <div class="map-veiling" aria-hidden="true"></div>
-            <div class="map-label">
-              <span data-i18n="contacts.mapLabel">Genova · Piazza De Ferrari</span>
-              <strong>ETRA</strong>
-              <a href="https://www.google.com/maps/search/?api=1&amp;query=ETRA%20Piazza%20Raffaele%20De%20Ferrari%204%20Genova" target="_blank" rel="noreferrer">
-                <span data-i18n="contacts.openMap">Apri su Google Maps</span>
-                <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="footer-main">
-        <a class="footer-logo footer-brand-mark" href="#top" aria-label="ETRA, torna all'inizio"><img class="brand-logo-img" src="assets/etra-logo-light.png" alt="ETRA" width="2172" height="724" loading="lazy" /></a>
-        <p data-i18n-html="footer.tagline">Cucina e arte,<br />nel cuore di Genova.</p>
-        <a href="#top"><span data-i18n="footer.top">Torna su</span><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V4"></path><path d="m6 10 6-6 6 6"></path></svg></a>
+    <form data-contact-form>
+      <input type="hidden" name="context" value="Prenotazione tavolo" />
+      <label><span data-i18n="form.name">Nome e cognome *</span><input type="text" name="name" autocomplete="name" required /></label>
+      <div class="form-row">
+        <label><span data-i18n="form.date">Data</span><input type="date" name="date" /></label>
+        <label><span data-i18n="form.time">Orario</span><input type="time" name="time" /></label>
+        <label><span data-i18n="form.guests">Persone</span><select name="guests" autocomplete="off"><option value="" data-i18n="form.choose">Scegli</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6+">6+</option></select></label>
       </div>
-      <div class="footer-bottom">
-        <p>© <span data-year></span> ETRA · BF GALLERY SRL · P.IVA 10358160967</p>
-        <p>Piazza Raffaele De Ferrari 4 · 16121 Genova · <a href="mailto:info@etra.art">info@etra.art</a></p>
-      </div>
-      <div class="footer-legal-links" aria-label="Informazioni legali">
-        <button type="button" data-legal-trigger="privacy" data-i18n="legal.privacy">Privacy</button>
-        <button type="button" data-legal-trigger="cookies" data-i18n="legal.cookies">Cookie</button>
-        <button type="button" data-legal-trigger="notes" data-i18n="legal.notes">Note legali</button>
-        <button type="button" data-cookie-manage data-i18n="legal.manageCookies">Gestisci cookie</button>
-      </div>
-    </footer>
+      <label><span data-i18n="form.message">Messaggio</span><textarea name="message" rows="3" data-i18n-placeholder="form.placeholder" placeholder="Richieste o informazioni utili"></textarea></label>
+      <button class="whatsapp-submit" type="submit">
+        <span data-i18n="form.submit">Continua su WhatsApp</span>
+        <svg class="whatsapp-cta-icon" viewBox="0 0 24 24" aria-hidden="true"><path class="whatsapp-icon-mark" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.051 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.822 9.822 0 0 1 6.988 2.899 9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.883-9.887 9.883M20.52 3.449A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.946L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.52 3.449"></path></svg>
+      </button>
+      <p class="form-note" data-i18n="form.note">Nessun dato viene salvato sul sito: il messaggio viene preparato nel browser e inviato solo se lo confermi in WhatsApp.</p>
+    </form>
+  </section>
+</div>
 
-    <div class="card-modal" data-card-modal aria-hidden="true" hidden>
-      <section class="card-dialog" role="dialog" aria-modal="true" aria-labelledby="card-title" tabindex="-1">
-        <header class="card-header">
-          <a class="brand card-brand-mark" href="#top" aria-label="ETRA, torna all'inizio"><img class="brand-logo-img brand-logo-dark" src="assets/etra-logo-dark.png" alt="ETRA" width="2508" height="627" /></a>
-          <div class="card-tabs" role="tablist" aria-label="Seleziona la carta">
-            <button class="is-active" type="button" role="tab" aria-selected="true" data-card-tab="food" data-i18n="card.food">Le nostre proposte</button>
-            <button type="button" role="tab" aria-selected="false" data-card-tab="wine" data-i18n="card.wine">Carta dei vini</button>
-          </div>
-          <button class="card-close" type="button" aria-label="Chiudi la carta" data-card-close><span></span><span></span></button>
-        </header>
-
-        <div class="card-body">
-          <div class="card-intro">
-            <p class="section-kicker" data-card-kicker>ETRA · Le nostre proposte</p>
-            <h2 id="card-title" data-card-title>Le nostre <em>proposte.</em></h2>
-            <p data-card-description>Tre percorsi degustazione raccontati portata dopo portata, con i relativi abbinamenti.</p>
-          </div>
-          <div class="catalog" data-card-content></div>
-          <p class="catalog-note" data-i18n="card.note">Menu, prezzi e disponibilita possono variare secondo stagione e aggiornamenti del ristorante.</p>
-        </div>
-      </section>
+<div class="legal-modal" data-legal-modal aria-hidden="true" hidden>
+  <button class="legal-backdrop" type="button" aria-label="Chiudi le informazioni legali" data-legal-close></button>
+  <section class="legal-dialog" role="dialog" aria-modal="true" aria-labelledby="legal-title" tabindex="-1">
+    <button class="legal-close" type="button" aria-label="Chiudi" data-legal-close><span></span><span></span></button>
+    <p class="section-kicker">Il Clipper · Informazioni legali</p>
+    <h2 id="legal-title">Privacy,<br /><em>cookie e note legali.</em></h2>
+    <div class="legal-tabs" role="tablist" aria-label="Seleziona informativa">
+      <button class="is-active" type="button" role="tab" aria-selected="true" data-legal-tab="privacy">Privacy</button>
+      <button type="button" role="tab" aria-selected="false" data-legal-tab="cookies">Cookie</button>
+      <button type="button" role="tab" aria-selected="false" data-legal-tab="notes">Note legali</button>
     </div>
-
-    <div class="booking-modal" data-booking-modal aria-hidden="true" hidden>
-      <button class="booking-backdrop" type="button" aria-label="Chiudi il form" data-booking-close></button>
-      <section class="booking-dialog" role="dialog" aria-modal="true" aria-labelledby="booking-title" tabindex="-1">
-        <button class="booking-close" type="button" aria-label="Chiudi" data-booking-close><span></span><span></span></button>
-        <p class="section-kicker" data-i18n="form.kicker">WhatsApp</p>
-        <h2 id="booking-title" data-i18n-html="form.title">Scrivi a<br /><em>ETRA.</em></h2>
-        <p class="booking-intro" data-i18n="form.intro">Compila i campi: prepareremo il messaggio da inviare su WhatsApp.</p>
-
-        <form data-contact-form>
-          <input type="hidden" name="context" value="Prenotazione tavolo" />
-          <label>
-            <span data-i18n="form.name">Nome e cognome *</span>
-            <input type="text" name="name" autocomplete="name" required />
-          </label>
-          <div class="form-row">
-            <label><span data-i18n="form.date">Data</span><input type="date" name="date" /></label>
-            <label><span data-i18n="form.time">Orario</span><input type="time" name="time" /></label>
-            <label>
-              <span data-i18n="form.guests">Persone</span>
-              <select name="guests" autocomplete="off">
-                <option value="" data-i18n="form.choose">Scegli</option>
-                <option value="1">1</option><option value="2">2</option><option value="3">3</option>
-                <option value="4">4</option><option value="5">5</option><option value="6+">6+</option>
-              </select>
-            </label>
-          </div>
-          <label>
-            <span data-i18n="form.message">Messaggio</span>
-            <textarea name="message" rows="3" data-i18n-placeholder="form.placeholder" placeholder="Richieste o informazioni utili"></textarea>
-          </label>
-          <button class="whatsapp-submit" type="submit">
-            <span data-i18n="form.submit">Continua su WhatsApp</span>
-            <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.4-4.3A8.5 8.5 0 1 1 20.5 11.7Z"></path><path d="M8.2 7.7c.4 3.7 4.3 7.5 8 8"></path></svg>
-          </button>
-          <p class="form-note" data-i18n="form.note">Nessun dato viene salvato sul sito: il messaggio viene composto direttamente in WhatsApp.</p>
-        </form>
-      </section>
+    <div class="legal-content">
+      <article class="legal-panel is-active" data-legal-panel="privacy">
+        <h3>Informativa privacy</h3>
+        <p><strong>Ultimo aggiornamento:</strong> 1 ottobre 2026.</p>
+        <h4>1. Titolare del trattamento</h4>
+        <p><strong>I Miei Nani Srl</strong>, sede legale in Corso Europa 1726/3, Genova, P. IVA/C.F. 01993010998, REA GE-451107, capitale sociale € 10.000,00 i.v. Contatti: <a href="mailto:Williamfranceschini885@gmail.com">Williamfranceschini885@gmail.com</a>; PEC <a href="mailto:imieinani@pec.it">imieinani@pec.it</a>. L'attivita' Il Clipper ha sede operativa in Via dei Mille 3, 16031 Bogliasco (GE).</p>
+        <h4>2. Dati trattati e origine</h4>
+        <ul>
+          <li><strong>Dati di navigazione e sicurezza:</strong> indirizzo IP, data e ora, pagina richiesta, identificativi tecnici del browser/dispositivo ed eventuali log di errore, trattati automaticamente dall'infrastruttura di hosting per erogare e proteggere il sito.</li>
+          <li><strong>Preferenza sui servizi esterni:</strong> scelta di accettazione o rifiuto e data della scelta, salvate esclusivamente nel localStorage del dispositivo.</li>
+          <li><strong>Dati inseriti nel modulo WhatsApp:</strong> nome, data, orario, numero di persone e messaggio. Tali dati restano nel browser finche' l'utente non decide di aprire WhatsApp; il sito non li invia a un proprio server e non li archivia.</li>
+          <li><strong>Dati comunicati successivamente:</strong> se l'utente avvia una conversazione, telefona o scrive, il titolare tratta i dati forniti per gestire richieste e prenotazioni.</li>
+        </ul>
+        <h4>3. Finalita' e basi giuridiche</h4>
+        <ul>
+          <li>Erogazione, manutenzione e sicurezza del sito: legittimo interesse del titolare ai sensi dell'art. 6, par. 1, lett. f) GDPR.</li>
+          <li>Riscontro a richieste e gestione di prenotazioni: misure precontrattuali richieste dall'interessato e, quando applicabile, esecuzione del rapporto, ai sensi dell'art. 6, par. 1, lett. b) GDPR.</li>
+          <li>Adempimenti fiscali, contabili, amministrativi o richieste dell'autorita': obbligo legale ai sensi dell'art. 6, par. 1, lett. c) GDPR.</li>
+          <li>Caricamento facoltativo di Google Maps e memorizzazione della relativa preferenza: consenso ai sensi dell'art. 6, par. 1, lett. a) GDPR e art. 122 del D.Lgs. 196/2003.</li>
+          <li>Accertamento, esercizio o difesa di diritti: legittimo interesse del titolare ai sensi dell'art. 6, par. 1, lett. f) GDPR.</li>
+        </ul>
+        <h4>4. Conferimento e conseguenze</h4>
+        <p>I dati contrassegnati come necessari sono richiesti per predisporre il messaggio o gestire la richiesta. Il mancato conferimento puo' impedire di completare la specifica funzione, ma non limita la consultazione del sito. Il consenso ai servizi esterni e' facoltativo e revocabile in ogni momento.</p>
+        <h4>5. Modalita', destinatari e responsabili</h4>
+        <p>I dati sono trattati con misure tecniche e organizzative adeguate da personale autorizzato e, per quanto necessario, da fornitori di hosting, manutenzione e assistenza informatica nominati responsabili del trattamento ai sensi dell'art. 28 GDPR. Possono essere comunicati a consulenti, autorita' o altri soggetti quando previsto dalla legge o necessario alla tutela dei diritti. I dati non sono venduti e non sono usati dal titolare per profilazione o pubblicita' comportamentale.</p>
+        <h4>6. Servizi di terzi e trasferimenti</h4>
+        <p>Google Maps viene caricato solo dopo scelta positiva. WhatsApp, Instagram, Tripadvisor e Google Maps sono servizi di soggetti terzi: aprendo tali servizi l'utente lascia questo sito e il trattamento successivo avviene secondo le informative dei rispettivi titolari. Alcuni fornitori possono trattare dati fuori dallo Spazio Economico Europeo sulla base di decisioni di adeguatezza, clausole contrattuali standard o altre garanzie previste dagli artt. 44 e seguenti GDPR.</p>
+        <ul>
+          <li><a href="https://policies.google.com/privacy?hl=it" target="_blank" rel="noreferrer">Informativa privacy Google</a></li>
+          <li><a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noreferrer">Informativa privacy WhatsApp</a></li>
+          <li><a href="https://privacycenter.instagram.com/policy/" target="_blank" rel="noreferrer">Informativa privacy Instagram</a></li>
+          <li><a href="https://tripadvisor.mediaroom.com/IT-privacy-policy" target="_blank" rel="noreferrer">Informativa privacy Tripadvisor</a></li>
+        </ul>
+        <h4>7. Conservazione</h4>
+        <p>I log tecnici sono conservati dai fornitori per il tempo strettamente necessario a sicurezza, diagnostica e funzionamento, secondo i relativi accordi e obblighi. La preferenza locale resta sul dispositivo per un massimo di 6 mesi, salvo cancellazione anticipata. I dati ricevuti per richieste o prenotazioni sono conservati per il tempo necessario a gestirle e, se nasce un rapporto, per i termini imposti dalla normativa fiscale e civile o necessari alla tutela in giudizio.</p>
+        <h4>8. Diritti dell'interessato</h4>
+        <p>L'interessato puo' chiedere accesso, rettifica, cancellazione, limitazione, portabilita' ove applicabile, opposizione al trattamento basato sul legittimo interesse e revoca del consenso senza pregiudicare la liceita' del trattamento precedente. Le richieste possono essere inviate ai contatti del titolare. Il riscontro viene fornito senza ingiustificato ritardo e, di regola, entro un mese.</p>
+        <h4>9. Reclamo e decisioni automatizzate</h4>
+        <p>L'interessato puo' proporre reclamo al <a href="https://www.garanteprivacy.it/" target="_blank" rel="noreferrer">Garante per la protezione dei dati personali</a> o rivolgersi all'autorita' giudiziaria. Il titolare non effettua decisioni unicamente automatizzate con effetti giuridici o analogamente significativi e non svolge profilazione tramite questo sito.</p>
+        <h4>10. Aggiornamenti</h4>
+        <p>Questa informativa puo' essere aggiornata in caso di modifiche normative, organizzative o tecniche. La versione vigente e la data di aggiornamento sono sempre pubblicate in questa sezione.</p>
+      </article>
+      <article class="legal-panel" data-legal-panel="cookies">
+        <h3>Cookie policy</h3>
+        <p><strong>Ultimo aggiornamento:</strong> 1 ottobre 2026.</p>
+        <h4>1. Cosa sono cookie e strumenti analoghi</h4>
+        <p>I cookie sono piccoli file che i siti possono memorizzare nel browser. Tecnologie come localStorage possono svolgere funzioni analoghe e sono soggette, quando permettono accesso o memorizzazione nel dispositivo, alle regole dell'art. 122 del Codice Privacy.</p>
+        <h4>2. Strumenti usati direttamente dal sito</h4>
+        <p>Il sito non installa cookie di profilazione, pubblicitari o analytics. Utilizza esclusivamente il localStorage tecnico <code>ilClipperExternalServicesConsent</code> per registrare la scelta relativa ai servizi esterni, la data e la versione dell'informativa. La durata massima e' 6 mesi; l'utente puo' cancellarlo prima tramite “Gestisci cookie” o dalle impostazioni del browser.</p>
+        <h4>3. Google Maps</h4>
+        <p>La mappa e' bloccata per impostazione predefinita e nessuna richiesta viene inviata a Google tramite l'iframe finche' l'utente non seleziona “Accetta servizi esterni” o “Carica la mappa”. Dopo il consenso, Google puo' ricevere indirizzo IP, informazioni sul dispositivo e interazioni e puo' usare cookie o altri identificatori secondo la propria <a href="https://policies.google.com/privacy?hl=it" target="_blank" rel="noreferrer">informativa privacy</a>. Il titolare non controlla nomi e durata degli identificatori impostati da Google, che possono cambiare nel tempo.</p>
+        <h4>4. Collegamenti esterni</h4>
+        <p>I collegamenti a WhatsApp, Instagram, Tripadvisor e Google Maps non installano strumenti di tali soggetti finche' non vengono attivati dall'utente. Una volta aperto il servizio esterno, si applicano le impostazioni e le informative del relativo fornitore.</p>
+        <h4>5. Gestione e revoca del consenso</h4>
+        <p>“Solo necessari” mantiene bloccata la mappa; “Accetta servizi esterni” autorizza il caricamento. Le due scelte sono facoltative e non pregiudicano l'accesso ai contenuti. La preferenza puo' essere modificata in qualsiasi momento da “Gestisci cookie” nel footer. La revoca non pregiudica la liceita' del trattamento svolto prima della revoca.</p>
+        <h4>6. Impostazioni del browser</h4>
+        <p>L'utente puo' eliminare dati locali e cookie anche dalle impostazioni del browser. La cancellazione della memoria del sito comportera' la nuova visualizzazione del pannello di scelta. Il blocco dei soli strumenti non necessari non compromette la navigazione ordinaria.</p>
+        <h4>7. Titolare e contatti</h4>
+        <p>Il titolare e' I Miei Nani Srl. Per informazioni o per esercitare i diritti: <a href="mailto:Williamfranceschini885@gmail.com">Williamfranceschini885@gmail.com</a>; PEC <a href="mailto:imieinani@pec.it">imieinani@pec.it</a>.</p>
+      </article>
+      <article class="legal-panel" data-legal-panel="notes">
+        <h3>Note legali</h3>
+        <p><strong>Ultimo aggiornamento:</strong> 1 ottobre 2026.</p>
+        <h4>1. Identificazione del gestore</h4>
+        <p>Il sito del Ristorante Il Clipper e' gestito da <strong>I Miei Nani Srl</strong>, sede legale Corso Europa 1726/3, Genova, P. IVA/C.F. 01993010998, REA GE-451107, capitale sociale € 10.000,00 i.v.; PEC <a href="mailto:imieinani@pec.it">imieinani@pec.it</a>; e-mail <a href="mailto:Williamfranceschini885@gmail.com">Williamfranceschini885@gmail.com</a>. Sede dell'attivita': Via dei Mille 3, 16031 Bogliasco (GE).</p>
+        <h4>2. Natura del sito e prenotazioni</h4>
+        <p>Il sito ha finalita' informativa. L'invio o la preparazione di un messaggio tramite WhatsApp non conclude automaticamente una prenotazione o un contratto: la richiesta e' valida soltanto dopo conferma del ristorante. Eventuali condizioni comunicate direttamente dal personale prevalgono sulle informazioni generiche presenti online.</p>
+        <h4>3. Menu, prezzi e allergeni</h4>
+        <p>Menu, prezzi, ingredienti, annate, etichette e disponibilita' possono essere aggiornati. Fa fede quanto comunicato nel locale al momento dell'ordinazione. Le informazioni sugli allergeni non sostituiscono il confronto con il personale: chi soffre di allergie o intolleranze deve informare il ristorante prima dell'ordine, anche per valutare possibili contaminazioni incrociate.</p>
+        <h4>4. Contenuti e proprieta' intellettuale</h4>
+        <p>Testi, fotografie, logo, grafica e altri contenuti sono protetti dalla normativa sul diritto d'autore e sui segni distintivi e non possono essere riprodotti, modificati, distribuiti o utilizzati commercialmente senza autorizzazione, salvo gli usi consentiti dalla legge. I marchi di terzi appartengono ai rispettivi titolari e sono citati unicamente per identificare servizi o prodotti.</p>
+        <h4>5. Collegamenti e servizi di terzi</h4>
+        <p>Il sito contiene collegamenti a servizi esterni. Il gestore non controlla disponibilita', sicurezza, contenuti o successive modifiche di tali siti e non risponde delle loro autonome attivita', fatti salvi i limiti inderogabili di legge. L'utente e' invitato a consultare condizioni e informative dei relativi fornitori.</p>
+        <h4>6. Accuratezza, disponibilita' e responsabilita'</h4>
+        <p>Il gestore cura l'aggiornamento delle informazioni ma non garantisce l'assenza assoluta di errori, interruzioni o contenuti non aggiornati. Nulla in queste note esclude o limita responsabilita' che non possano essere escluse per legge, ne' i diritti inderogabili del consumatore.</p>
+        <h4>7. Sicurezza e segnalazioni</h4>
+        <p>L'utente non deve tentare accessi non autorizzati, interferire con il funzionamento del sito o introdurre codice dannoso. Errori, contenuti contestati o possibili violazioni possono essere segnalati ai recapiti del gestore.</p>
+        <h4>8. Legge applicabile e foro competente</h4>
+        <p>Le presenti note sono regolate dalla legge italiana. Per le controversie si applicano i criteri di competenza previsti dalla legge; per i consumatori resta fermo il foro inderogabile del luogo di residenza o domicilio, quando applicabile.</p>
+      </article>
     </div>
+  </section>
+</div>
 
-    <div class="legal-modal" data-legal-modal aria-hidden="true" hidden>
-      <button class="legal-backdrop" type="button" aria-label="Chiudi le informazioni legali" data-legal-close></button>
-      <section class="legal-dialog" role="dialog" aria-modal="true" aria-labelledby="legal-title" tabindex="-1">
-        <button class="legal-close" type="button" aria-label="Chiudi" data-legal-close><span></span><span></span></button>
-        <p class="section-kicker">ETRA · Informazioni legali</p>
-        <h2 id="legal-title">Privacy,<br /><em>cookie e note legali.</em></h2>
-        <div class="legal-tabs" role="tablist" aria-label="Seleziona informativa">
-          <button class="is-active" type="button" role="tab" aria-selected="true" data-legal-tab="privacy">Privacy</button>
-          <button type="button" role="tab" aria-selected="false" data-legal-tab="cookies">Cookie</button>
-          <button type="button" role="tab" aria-selected="false" data-legal-tab="notes">Note legali</button>
-        </div>
-        <div class="legal-content">
-          <article class="legal-panel is-active" data-legal-panel="privacy">
-            <h3>Informativa privacy</h3>
-            <p><strong>Titolare del trattamento:</strong> BF Gallery Srl, P.IVA 10358160967, attivita ETRA, Piazza Raffaele De Ferrari 4, 16121 Genova. Email: <a href="mailto:info@etra.art">info@etra.art</a>.</p>
-            <p>Il sito presenta l'attivita, i percorsi gastronomici, i contatti e permette di preparare una richiesta via email. I dati inseriti nel modulo non vengono salvati dal sito.</p>
-          </article>
-          <article class="legal-panel" data-legal-panel="cookies">
-            <h3>Cookie policy</h3>
-            <p>Il sito usa solo strumenti tecnici. La mappa Google viene caricata solo dopo consenso ai servizi esterni.</p>
-          </article>
-          <article class="legal-panel" data-legal-panel="notes">
-            <h3>Note legali</h3>
-            <p><strong>Proprietario:</strong> BF Gallery Srl · <strong>P.IVA:</strong> 10358160967 · <strong>Email:</strong> <a href="mailto:info@etra.art">info@etra.art</a>.</p>
-            <p>Menu, prezzi, orari e disponibilita possono cambiare. In caso di allergie o intolleranze alimentari, informa sempre il personale prima dell'ordinazione.</p>
-          </article>
-        </div>
-      </section>
-    </div>
+<div class="cookie-banner" data-cookie-banner hidden role="region" aria-label="Preferenze cookie">
+  <div>
+    <h2 data-i18n="cookie.title">Privacy e servizi esterni</h2>
+    <p data-i18n="cookie.copy">Usiamo solo strumenti tecnici. Google Maps viene incorporato nella pagina solo dopo il tuo consenso.</p>
+  </div>
+  <div class="cookie-actions">
+    <button type="button" data-cookie-necessary data-i18n="cookie.necessary">Solo necessari</button>
+    <button type="button" data-cookie-accept data-i18n="cookie.accept">Accetta servizi esterni</button>
+    <button type="button" data-legal-trigger="cookies" data-i18n="cookie.preferences">Dettagli</button>
+  </div>
+</div>
 
-    <div class="cookie-banner" data-cookie-banner hidden role="region" aria-label="Preferenze cookie">
-      <div>
-        <h2 data-i18n="cookie.title">Privacy e servizi esterni</h2>
-        <p data-i18n="cookie.copy">Usiamo solo strumenti tecnici. Per caricare Google Maps ti chiediamo prima il consenso ai servizi esterni.</p>
-      </div>
-      <div class="cookie-actions">
-        <button type="button" data-cookie-necessary data-i18n="cookie.necessary">Solo necessari</button>
-        <button type="button" data-cookie-accept data-i18n="cookie.accept">Accetta servizi esterni</button>
-        <button type="button" data-legal-trigger="cookies" data-i18n="cookie.preferences">Dettagli</button>
-      </div>
-    </div>
-
-    <a class="mobile-sticky-book" href="https://widget.thefork.com/it/4495685f-8914-46d8-9fa0-df415a9618d3" target="_blank" rel="noreferrer">
-      <span data-i18n="cta.bookTable">Prenota un tavolo</span>
-      <svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19 19 5"></path><path d="M9 5h10v10"></path></svg>
-    </a>
-  </body>
+<a class="mobile-sticky-book" href="#prenota" data-booking-trigger data-context="Prenotazione tavolo">
+  <span data-i18n="cta.bookTable">Prenota un tavolo</span>
+  <svg class="whatsapp-cta-icon" viewBox="0 0 24 24" aria-hidden="true"><path class="whatsapp-icon-mark" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.051 21.785h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.999-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.002-5.45 4.436-9.884 9.889-9.884a9.822 9.822 0 0 1 6.988 2.899 9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.883-9.887 9.883M20.52 3.449A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.946L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0 0 20.52 3.449"></path></svg>
+</a>
+</body>
 </html>
