@@ -803,13 +803,6 @@
     }, 450);
   };
 
-  document.querySelectorAll("[data-card-trigger]").forEach((trigger) => {
-    trigger.addEventListener("click", (event) => {
-      event.preventDefault();
-      openCardModal(trigger.dataset.cardTrigger, trigger);
-    });
-  });
-
   cardModal?.querySelector("[data-card-close]")?.addEventListener("click", closeCardModal);
   cardModal?.querySelectorAll("[data-card-tab]").forEach((button) => {
     button.addEventListener("click", () => setCardType(button.dataset.cardTab));
@@ -850,11 +843,20 @@
     }, 500);
   };
 
-  document.querySelectorAll("[data-booking-trigger]").forEach((trigger) => {
-    trigger.addEventListener("click", (event) => {
+  document.addEventListener("click", (event) => {
+    const target = event.target instanceof Element ? event.target : null;
+    const cardTrigger = target?.closest("[data-card-trigger]");
+    if (cardTrigger) {
       event.preventDefault();
-      openBookingModal(trigger);
-    });
+      openCardModal(cardTrigger.dataset.cardTrigger, cardTrigger);
+      return;
+    }
+
+    const bookingTrigger = target?.closest("[data-booking-trigger]");
+    if (bookingTrigger) {
+      event.preventDefault();
+      openBookingModal(bookingTrigger);
+    }
   });
 
   bookingModal?.querySelectorAll("[data-booking-close]").forEach((button) => {
