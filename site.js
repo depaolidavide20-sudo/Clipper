@@ -1,6 +1,6 @@
 (() => {
-  if (window.__clipperSiteInitialized) return;
-  window.__clipperSiteInitialized = true;
+  const scriptVersion = "2026-10-02-cta3";
+  if (window.__clipperSiteVersion === scriptVersion) return;
 
   const body = document.body;
   const header = document.querySelector("[data-header]");
@@ -1274,4 +1274,6 @@
 
   const year = document.querySelector("[data-year]");
   if (year) year.textContent = new Date().getFullYear();
+
+  window.__clipperSiteVersion = scriptVersion;
 })();
