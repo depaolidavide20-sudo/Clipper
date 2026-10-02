@@ -4507,6 +4507,7 @@ body {
 }
 
 .map-consent button,
+.map-consent .map-load-link,
 .cookie-actions button {
   min-height: 2.75rem;
   padding: 0 1rem;
@@ -4519,6 +4520,30 @@ body {
   font-weight: 700;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+/* Script-independent menu and wine-list pages. */
+.fallback-catalog { min-height: 100vh; padding: 2rem var(--page-x) 5rem; background: var(--paper); color: var(--ink); }
+.fallback-catalog-header, .fallback-catalog-content, .fallback-catalog-footer { width: min(72rem, 100%); margin-inline: auto; }
+.fallback-catalog-header { padding-bottom: 3rem; border-bottom: 1px solid rgba(10, 18, 15, 0.28); text-align: center; }
+.fallback-catalog-header img { width: 11rem; margin: 2rem auto 1.5rem; filter: brightness(0); }
+.fallback-back { display: block; width: max-content; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
+.fallback-catalog-header h1 { margin: 0.5rem 0 1rem; font-family: var(--serif); font-size: clamp(2.5rem, 7vw, 5.5rem); font-weight: 400; letter-spacing: 0; }
+.fallback-catalog-header p { max-width: 42rem; margin: 0.6rem auto; line-height: 1.6; }
+.fallback-catalog-content section { padding: 3.5rem 0 2rem; }
+.fallback-catalog-content h2 { margin: 0 0 1.5rem; font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 400; letter-spacing: 0; }
+.fallback-catalog-content h2 small { display: block; margin-top: 0.4rem; font-family: var(--sans); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.55; }
+.fallback-catalog-content article { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 1rem; align-items: start; padding: 1.1rem 0; border-top: 1px solid rgba(10, 18, 15, 0.22); }
+.fallback-catalog-content article h3 { margin: 0; font-family: var(--serif); font-size: clamp(1.05rem, 2vw, 1.35rem); font-weight: 400; letter-spacing: 0; }
+.fallback-catalog-content article p { margin: 0.35rem 0 0; font-size: 0.75rem; opacity: 0.58; }
+.fallback-catalog-content article strong { white-space: nowrap; }
+.fallback-catalog-footer { display: flex; justify-content: center; gap: 1rem; padding-top: 3rem; }
+.fallback-catalog-footer a { padding: 0.9rem 1.2rem; border: 1px solid currentColor; font-size: 0.76rem; font-weight: 600; text-align: center; text-transform: uppercase; }
+
+@media (max-width: 600px) {
+  .fallback-catalog { padding-top: 1.25rem; }
+  .fallback-catalog-content section { padding-top: 2.5rem; }
+  .fallback-catalog-footer { flex-direction: column; }
 }
 
 .cookie-banner {
