@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Italiana&display=swap");
-
 :root {
   --ink: #0a120f;
   --ink-soft: #121d18;
@@ -18,8 +16,8 @@
   --radius-soft: 0.5rem;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --shadow-ambient: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
-  --serif: "Italiana", "Iowan Old Style", "Times New Roman", serif;
-  --sans: "DM Sans", "Avenir Next", Helvetica, Arial, sans-serif;
+  --serif: Didot, "Bodoni 72", "Iowan Old Style", "Times New Roman", serif;
+  --sans: "Avenir Next", Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
   --page-x: clamp(1.35rem, 4vw, 4.5rem);
   --section-y: clamp(6rem, 10vw, 10rem);
 }

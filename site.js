@@ -122,6 +122,9 @@
       "legal.cookies": "Cookie",
       "legal.notes": "Note legali",
       "legal.manageCookies": "Gestisci cookie",
+      "legal.kicker": "Il Clipper · Informazioni legali",
+      "legal.title": "Privacy,<br><em>cookie e note legali.</em>",
+      "legal.notes": "Note legali",
       "cookie.title": "Privacy e servizi esterni",
       "cookie.copy": "Usiamo solo strumenti tecnici. Google Maps viene incorporato nella pagina solo dopo il tuo consenso.",
       "cookie.necessary": "Solo necessari",
@@ -223,6 +226,9 @@
       "legal.cookies": "Cookies",
       "legal.notes": "Legal notes",
       "legal.manageCookies": "Manage cookies",
+      "legal.kicker": "Il Clipper · Legal information",
+      "legal.title": "Privacy,<br><em>cookies and legal notices.</em>",
+      "legal.notes": "Legal notices",
       "cookie.title": "Privacy and external services",
       "cookie.copy": "We only use technical tools. Google Maps is embedded in the page only after your consent.",
       "cookie.necessary": "Necessary only",
@@ -264,80 +270,80 @@
           it: "Antipasti di Mare",
           en: "Seafood starters",
           items: [
-            { it: "Muscoli alla marinara", price: "€ 15", note: "Allergeni: 14" },
-            { it: "Acciughe aperte impanate", price: "€ 15", note: "Allergeni: 1, 4, 7" },
-            { it: "Acciughe ripiene e pomodori", price: "€ 17", note: "Allergeni: 1, 4, 7" },
-            { it: "Tortino di polpo e patate con verdure al salto*", price: "€ 17", note: "Allergeni: 14" },
-            { it: "Insalata calda di baccalà con pinoli, olive e patate", price: "€ 18", note: "Allergeni: 4, 8" },
-            { it: "Cappon magro", price: "€ 18", note: "Allergeni: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14" },
-            { it: "Insalata tiepida di mare", price: "€ 23", note: "Allergeni: 2, 4, 14" },
-            { it: "Tartare di tonno pinna gialla", price: "€ 25", note: "Allergeni: 4, 6, 8" },
-            { it: "Crudo di pesce variabile*", price: "€ 40", note: "Allergeni: 2, 4, 6" },
+            { it: "Muscoli alla marinara", en: "Mussels marinara", price: "€ 15", note: "Allergeni: 14" },
+            { it: "Acciughe aperte impanate", en: "Breaded butterflied anchovies", price: "€ 15", note: "Allergeni: 1, 4, 7" },
+            { it: "Acciughe ripiene e pomodori", en: "Stuffed anchovies with tomatoes", price: "€ 17", note: "Allergeni: 1, 4, 7" },
+            { it: "Tortino di polpo e patate con verdure al salto*", en: "Octopus and potato cake with sauteed vegetables*", price: "€ 17", note: "Allergeni: 14" },
+            { it: "Insalata calda di baccalà con pinoli, olive e patate", en: "Warm salt cod salad with pine nuts, olives and potatoes", price: "€ 18", note: "Allergeni: 4, 8" },
+            { it: "Cappon magro", en: "Traditional Ligurian cappon magro", price: "€ 18", note: "Allergeni: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14" },
+            { it: "Insalata tiepida di mare", en: "Warm seafood salad", price: "€ 23", note: "Allergeni: 2, 4, 14" },
+            { it: "Tartare di tonno pinna gialla", en: "Yellowfin tuna tartare", price: "€ 25", note: "Allergeni: 4, 6, 8" },
+            { it: "Crudo di pesce variabile*", en: "Daily selection of raw fish*", price: "€ 40", note: "Allergeni: 2, 4, 6" },
           ],
         },
         {
           it: "Antipasti di Terra",
           en: "Meat starters",
           items: [
-            { it: "Caprese con mozzarella di bufala", price: "€ 13", note: "Allergeni: 1, 3, 7, 8" },
-            { it: "Prosciutto di Parma", price: "€ 15", note: "Allergeni: 7" },
-            { it: "Tartare di manzo all'Albese, con o senza uovo", price: "€ 22", note: "Allergeni: 3, 5" },
+            { it: "Caprese con mozzarella di bufala", en: "Caprese salad with buffalo mozzarella", price: "€ 13", note: "Allergeni: 1, 3, 7, 8" },
+            { it: "Prosciutto di Parma", en: "Parma ham", price: "€ 15", note: "Allergeni: 7" },
+            { it: "Tartare di manzo all'Albese, con o senza uovo", en: "Alba-style beef tartare, with or without egg", price: "€ 22", note: "Allergeni: 3, 5" },
           ],
         },
         {
           it: "Primi di Mare",
           en: "Seafood pasta",
           items: [
-            { it: "Spaghetti alle vongole", price: "€ 20", note: "Allergeni: 1, 14" },
-            { it: "Spaghetti alle vongole e pistacchio", price: "€ 22", note: "Allergeni: 1, 8, 14" },
-            { it: "Spaghetti ai frutti di mare", price: "€ 25", note: "Allergeni: 1, 2, 9, 14" },
-            { it: "Calamarata allo chef Germano", price: "€ 22", note: "Allergeni: 1, 2, 4, 8, 9, 14" },
-            { it: "Spaghetti alla Willy con aglio, olio, peperoncino, gamberi e scaglie di grana", price: "€ 25", note: "Allergeni: 1, 2, 3, 7" },
-            { it: "Spaghetti all'Augusto con pesto di pistacchio, tartare di gambero rosso e stracciatella", price: "€ 25", note: "Allergeni: 1, 2, 9, 14" },
-            { it: "Spaghettone Cacio e Pepe con tartare di gambero rosso", price: "€ 25", note: "Allergeni: 2, 4, 7, 8" },
+            { it: "Spaghetti alle vongole", en: "Spaghetti with clams", price: "€ 20", note: "Allergeni: 1, 14" },
+            { it: "Spaghetti alle vongole e pistacchio", en: "Spaghetti with clams and pistachio", price: "€ 22", note: "Allergeni: 1, 8, 14" },
+            { it: "Spaghetti ai frutti di mare", en: "Spaghetti with mixed seafood", price: "€ 25", note: "Allergeni: 1, 2, 9, 14" },
+            { it: "Calamarata allo chef Germano", en: "Chef Germano's calamarata pasta", price: "€ 22", note: "Allergeni: 1, 2, 4, 8, 9, 14" },
+            { it: "Spaghetti alla Willy con aglio, olio, peperoncino, gamberi e scaglie di grana", en: "Willy-style spaghetti with garlic, olive oil, chilli, prawns and Grana cheese", price: "€ 25", note: "Allergeni: 1, 2, 3, 7" },
+            { it: "Spaghetti all'Augusto con pesto di pistacchio, tartare di gambero rosso e stracciatella", en: "Augusto-style spaghetti with pistachio pesto, red prawn tartare and stracciatella", price: "€ 25", note: "Allergeni: 1, 2, 9, 14" },
+            { it: "Spaghettone Cacio e Pepe con tartare di gambero rosso", en: "Cacio e pepe spaghettone with red prawn tartare", price: "€ 25", note: "Allergeni: 2, 4, 7, 8" },
           ],
         },
         {
           it: "Primi di Terra",
           en: "Pasta",
           items: [
-            { it: "Pansoti al sugo di noci", price: "€ 15", note: "Allergeni: 1, 3, 4, 6, 7, 8, 9, 11, 13, 14" },
-            { it: "Trofie al pesto di nostra produzione", price: "€ 17", note: "Allergeni: 1, 3, 4, 6, 7, 8, 9, 14" },
-            { it: "Carbonara con guanciale di Amatrice", price: "€ 20", note: "Allergeni: 1, 3, 7, 9" },
+            { it: "Pansoti al sugo di noci", en: "Pansoti pasta with walnut sauce", price: "€ 15", note: "Allergeni: 1, 3, 4, 6, 7, 8, 9, 11, 13, 14" },
+            { it: "Trofie al pesto di nostra produzione", en: "Trofie pasta with our homemade pesto", price: "€ 17", note: "Allergeni: 1, 3, 4, 6, 7, 8, 9, 14" },
+            { it: "Carbonara con guanciale di Amatrice", en: "Carbonara with Amatrice guanciale", price: "€ 20", note: "Allergeni: 1, 3, 7, 9" },
           ],
         },
         {
           it: "Secondi di Mare",
           en: "Seafood main courses",
           items: [
-            { it: "Frittura di totani*", price: "€ 20", note: "Allergeni: 1, 5, 14" },
-            { it: "Zuppa di cozze e vongole", price: "€ 20", note: "Allergeni: 9, 14" },
-            { it: "Tagliata di tonno pinna gialla al naturale o al pistacchio", price: "€ 25", note: "Allergeni: 4, 8" },
-            { it: "Orata ai ferri o alla ligure", price: "€ 28", note: "Allergeni: 4, 8" },
-            { it: "Frittura mista*", price: "€ 28", note: "Allergeni: 1, 2, 3, 4, 5, 7, 14" },
-            { it: "Polpo croccante su purea di patate al lime", price: "€ 26", note: "Allergeni: 7, 14" },
-            { it: "Pesce al sale con i suoi contorni (minimo per 2 persone)", price: "€ 40 cad.", note: "Allergeni: 3, 4" },
-            { it: "Grigliata mista", price: "€ 35", note: "Allergeni: 2, 4, 14" },
+            { it: "Frittura di totani*", en: "Fried squid*", price: "€ 20", note: "Allergeni: 1, 5, 14" },
+            { it: "Zuppa di cozze e vongole", en: "Mussel and clam soup", price: "€ 20", note: "Allergeni: 9, 14" },
+            { it: "Tagliata di tonno pinna gialla al naturale o al pistacchio", en: "Sliced yellowfin tuna, plain or with pistachio", price: "€ 25", note: "Allergeni: 4, 8" },
+            { it: "Orata ai ferri o alla ligure", en: "Grilled or Ligurian-style sea bream", price: "€ 28", note: "Allergeni: 4, 8" },
+            { it: "Frittura mista*", en: "Mixed fried seafood*", price: "€ 28", note: "Allergeni: 1, 2, 3, 4, 5, 7, 14" },
+            { it: "Polpo croccante su purea di patate al lime", en: "Crispy octopus on lime potato puree", price: "€ 26", note: "Allergeni: 7, 14" },
+            { it: "Pesce al sale con i suoi contorni (minimo per 2 persone)", en: "Salt-baked fish with side dishes (minimum 2 people)", price: "€ 40 each", note: "Allergeni: 3, 4" },
+            { it: "Grigliata mista", en: "Mixed seafood grill", price: "€ 35", note: "Allergeni: 2, 4, 14" },
           ],
         },
         {
           it: "Secondi di Terra",
           en: "Meat main courses",
           items: [
-            { it: "Hamburger di Fassona con i suoi contorni", price: "€ 16", note: "Allergeni: 1, 3, 5" },
-            { it: "Tagliata di filetto con rucola e Grana", price: "€ 27", note: "Allergeni: 7" },
-            { it: "Filetto alla griglia", price: "€ 27", note: "Allergeni: 1, 4, 7, 10" },
-            { it: "Filetto al pepe verde", price: "€ 29", note: "Allergeni: 1, 4, 7, 10" },
+            { it: "Hamburger di Fassona con i suoi contorni", en: "Fassona beef burger with side dishes", price: "€ 16", note: "Allergeni: 1, 3, 5" },
+            { it: "Tagliata di filetto con rucola e Grana", en: "Sliced beef fillet with rocket and Grana cheese", price: "€ 27", note: "Allergeni: 7" },
+            { it: "Filetto alla griglia", en: "Grilled beef fillet", price: "€ 27", note: "Allergeni: 1, 4, 7, 10" },
+            { it: "Filetto al pepe verde", en: "Beef fillet with green peppercorn sauce", price: "€ 29", note: "Allergeni: 1, 4, 7, 10" },
           ],
         },
         {
           it: "Contorni",
           en: "Side dishes",
           items: [
-            { it: "Patate fritte", price: "€ 5", note: "Allergeni: 1" },
-            { it: "Patate al forno", price: "€ 5", note: "Allergeni: 1" },
-            { it: "Insalata mista", price: "€ 6" },
-            { it: "Verdure grigliate / al salto", price: "€ 6" },
+            { it: "Patate fritte", en: "French fries", price: "€ 5", note: "Allergeni: 1" },
+            { it: "Patate al forno", en: "Roast potatoes", price: "€ 5", note: "Allergeni: 1" },
+            { it: "Insalata mista", en: "Mixed salad", price: "€ 6" },
+            { it: "Verdure grigliate / al salto", en: "Grilled / sauteed vegetables", price: "€ 6" },
           ],
         },
       ],
@@ -538,6 +544,96 @@
     },
   };
 
+  const legalTranslations = {
+    privacy: `
+      <h3>Privacy notice</h3>
+      <p><strong>Last updated:</strong> 9 October 2026.</p>
+      <h4>1. Data controller</h4>
+      <p><strong>I Miei Nani Srl</strong>, registered office at Corso Europa 1726/3, Genoa, VAT/tax code 01993010998, REA GE-451107, fully paid-up share capital €10,000. Contacts: <a href="mailto:Williamfranceschini885@gmail.com">Williamfranceschini885@gmail.com</a>; certified email <a href="mailto:imieinani@pec.it">imieinani@pec.it</a>. Il Clipper operates at Via dei Mille 3, 16031 Bogliasco (GE), Italy.</p>
+      <h4>2. Data processed and its source</h4>
+      <ul>
+        <li><strong>Navigation and security data:</strong> IP address, date and time, requested page, technical browser/device identifiers and error logs, automatically processed by the hosting infrastructure to provide and protect the website.</li>
+        <li><strong>External-service preference:</strong> the acceptance or refusal choice and its date, stored only in the device's localStorage.</li>
+        <li><strong>Data entered in the WhatsApp form:</strong> name, date, time, number of guests and message. These data remain in the browser until the user chooses to open WhatsApp; the website neither sends them to its own server nor stores them.</li>
+        <li><strong>Data communicated later:</strong> if the user starts a conversation, calls or writes, the controller processes the supplied data to handle enquiries and reservations.</li>
+      </ul>
+      <h4>3. Purposes and legal bases</h4>
+      <ul>
+        <li>Website provision, maintenance and security: the controller's legitimate interest under Article 6(1)(f) GDPR.</li>
+        <li>Replying to enquiries and managing reservations: pre-contractual steps requested by the data subject and, where applicable, performance of the relationship under Article 6(1)(b) GDPR.</li>
+        <li>Tax, accounting, administrative requirements or authority requests: legal obligation under Article 6(1)(c) GDPR.</li>
+        <li>Optional loading of Google Maps and storage of the related preference: consent under Article 6(1)(a) GDPR and Article 122 of Italian Legislative Decree 196/2003.</li>
+        <li>Establishment, exercise or defence of legal claims: legitimate interest under Article 6(1)(f) GDPR.</li>
+      </ul>
+      <h4>4. Provision of data and consequences</h4>
+      <p>Data marked as required are needed to prepare the message or handle the request. Failure to provide them may prevent completion of that function but does not restrict access to the website. Consent to external services is optional and may be withdrawn at any time.</p>
+      <h4>5. Processing methods, recipients and processors</h4>
+      <p>Data are processed with appropriate technical and organisational measures by authorised personnel and, where necessary, by hosting, maintenance and IT-support providers appointed as processors under Article 28 GDPR. Data may be disclosed to advisers, authorities or other parties where required by law or necessary to protect rights. The controller does not sell data or use them for profiling or behavioural advertising.</p>
+      <h4>6. Third-party services and transfers</h4>
+      <p>Google Maps is loaded only after a positive choice. WhatsApp, Instagram, Tripadvisor and Google Maps are third-party services: when opening them, the user leaves this website and subsequent processing is governed by the relevant provider's notice. Some providers may process data outside the European Economic Area on the basis of adequacy decisions, standard contractual clauses or other safeguards under Articles 44 et seq. GDPR.</p>
+      <ul>
+        <li><a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noreferrer">Google Privacy Policy</a></li>
+        <li><a href="https://www.whatsapp.com/legal/privacy-policy-eea" target="_blank" rel="noreferrer">WhatsApp Privacy Policy</a></li>
+        <li><a href="https://privacycenter.instagram.com/policy/" target="_blank" rel="noreferrer">Instagram Privacy Policy</a></li>
+        <li><a href="https://tripadvisor.mediaroom.com/IT-privacy-policy" target="_blank" rel="noreferrer">Tripadvisor Privacy Policy</a></li>
+      </ul>
+      <h4>7. Retention</h4>
+      <p>Technical logs are retained by providers only for the period required for security, diagnostics and operation, according to their agreements and obligations. The local preference remains on the device for no more than six months unless deleted earlier. Data received for enquiries or reservations are retained for the time needed to handle them and, if a relationship is established, for the periods required by tax and civil law or necessary for legal defence.</p>
+      <h4>8. Data-subject rights</h4>
+      <p>The data subject may request access, rectification, erasure, restriction, portability where applicable, object to processing based on legitimate interest and withdraw consent without affecting prior lawful processing. Requests may be sent to the controller's contacts. A response is provided without undue delay and normally within one month.</p>
+      <h4>9. Complaints and automated decisions</h4>
+      <p>The data subject may lodge a complaint with the <a href="https://www.garanteprivacy.it/" target="_blank" rel="noreferrer">Italian Data Protection Authority</a> or seek judicial remedies. The controller does not make solely automated decisions producing legal or similarly significant effects and does not carry out profiling through this website.</p>
+      <h4>10. Updates</h4>
+      <p>This notice may be updated following legal, organisational or technical changes. The current version and its update date are always published in this section.</p>`,
+    cookies: `
+      <h3>Cookie policy</h3>
+      <p><strong>Last updated:</strong> 9 October 2026.</p>
+      <h4>1. Cookies and similar tools</h4>
+      <p>Cookies are small files that websites may store in the browser. Technologies such as localStorage may perform similar functions and, when they access or store information on a device, are subject to Article 122 of the Italian Privacy Code.</p>
+      <h4>2. Tools used directly by this website</h4>
+      <p>The website does not install profiling, advertising or analytics cookies. It uses only the technical localStorage item <code>ilClipperExternalServicesConsent</code> to record the choice concerning external services, its date and the notice version. Its maximum duration is six months; users may delete it earlier through “Manage cookies” or their browser settings.</p>
+      <h4>3. Google Maps</h4>
+      <p>The map is blocked by default and the iframe sends no request to Google until the user selects “Accept external services” or “Load map”. After consent, Google may receive the IP address, device information and interaction data and may use cookies or other identifiers according to its <a href="https://policies.google.com/privacy?hl=en" target="_blank" rel="noreferrer">Privacy Policy</a>. The controller does not control the names or duration of identifiers set by Google, which may change over time.</p>
+      <h4>4. External links</h4>
+      <p>Links to WhatsApp, Instagram, Tripadvisor and Google Maps do not install tools from those providers until activated by the user. Once the external service is opened, that provider's settings and notices apply.</p>
+      <h4>5. Managing and withdrawing consent</h4>
+      <p>“Necessary only” keeps the map blocked; “Accept external services” permits loading. Both choices are optional and do not affect access to content. The preference can be changed at any time through “Manage cookies” in the footer. Withdrawal does not affect the lawfulness of processing carried out before withdrawal.</p>
+      <h4>6. Browser settings</h4>
+      <p>Users may also delete local data and cookies through their browser settings. Clearing website storage will cause the choice panel to appear again. Blocking non-essential tools does not affect ordinary browsing.</p>
+      <h4>7. Controller and contacts</h4>
+      <p>The controller is I Miei Nani Srl. For information or to exercise rights: <a href="mailto:Williamfranceschini885@gmail.com">Williamfranceschini885@gmail.com</a>; certified email <a href="mailto:imieinani@pec.it">imieinani@pec.it</a>.</p>`,
+    notes: `
+      <h3>Legal notices</h3>
+      <p><strong>Last updated:</strong> 9 October 2026.</p>
+      <h4>1. Website operator</h4>
+      <p>The Il Clipper restaurant website is operated by <strong>I Miei Nani Srl</strong>, registered office at Corso Europa 1726/3, Genoa, VAT/tax code 01993010998, REA GE-451107, fully paid-up share capital €10,000; certified email <a href="mailto:imieinani@pec.it">imieinani@pec.it</a>; email <a href="mailto:Williamfranceschini885@gmail.com">Williamfranceschini885@gmail.com</a>. Business address: Via dei Mille 3, 16031 Bogliasco (GE), Italy.</p>
+      <h4>2. Website purpose and reservations</h4>
+      <p>The website is for information purposes. Preparing or sending a WhatsApp message does not automatically conclude a reservation or contract: a request is valid only after confirmation by the restaurant. Any conditions communicated directly by staff prevail over general information shown online.</p>
+      <h4>3. Menu, prices and allergens</h4>
+      <p>Menus, prices, ingredients, vintages, labels and availability may be updated. Information provided at the restaurant when ordering prevails. Allergen information does not replace speaking with staff: anyone with allergies or intolerances must inform the restaurant before ordering, including to assess possible cross-contamination.</p>
+      <h4>4. Content and intellectual property</h4>
+      <p>Texts, photographs, logos, graphics and other content are protected by copyright and trademark law and may not be reproduced, modified, distributed or commercially used without permission, except where permitted by law. Third-party trademarks belong to their respective owners and are mentioned only to identify services or products.</p>
+      <h4>5. Third-party links and services</h4>
+      <p>The website contains links to external services. The operator does not control their availability, security, content or later changes and is not responsible for their independent activities, subject to mandatory legal limits. Users should review the relevant providers' terms and notices.</p>
+      <h4>6. Accuracy, availability and liability</h4>
+      <p>The operator takes care to keep information updated but cannot guarantee the absolute absence of errors, interruptions or outdated content. Nothing in these notices excludes or limits liability that cannot legally be excluded or mandatory consumer rights.</p>
+      <h4>7. Security and reports</h4>
+      <p>Users must not attempt unauthorised access, interfere with website operation or introduce malicious code. Errors, disputed content or possible infringements may be reported using the operator's contact details.</p>
+      <h4>8. Governing law and jurisdiction</h4>
+      <p>These notices are governed by Italian law. Statutory jurisdiction rules apply to disputes; for consumers, the mandatory court of their place of residence or domicile remains applicable where required.</p>`,
+  };
+
+  const legalItalianContent = Object.fromEntries(
+    [...document.querySelectorAll("[data-legal-panel]")].map((panel) => [panel.dataset.legalPanel, panel.innerHTML]),
+  );
+
+  const renderLegalContent = () => {
+    document.querySelectorAll("[data-legal-panel]").forEach((panel) => {
+      const key = panel.dataset.legalPanel;
+      panel.innerHTML = currentLanguage === "en" ? legalTranslations[key] : legalItalianContent[key];
+    });
+  };
+
   let currentLanguage = "it";
 
   const getFocusableElements = (container) => {
@@ -721,7 +817,7 @@
             <article class="catalog-item">
               <div>
                 <h4>${item[currentLanguage] || item.it}</h4>
-                ${item.note ? `<p>${item.note}</p>` : ((item[currentLanguage === "it" ? "en" : "it"] && item[currentLanguage === "it" ? "en" : "it"] !== item[currentLanguage]) ? `<p>${item[currentLanguage === "it" ? "en" : "it"]}</p>` : "")}
+                ${item.note ? `<p>${currentLanguage === "en" ? item.note.replace("Allergeni:", "Allergens:") : item.note}</p>` : ""}
               </div>
               ${item.price ? `<span>${item.price}</span>` : ""}
             </article>
@@ -758,6 +854,7 @@
     });
 
     renderCatalog();
+    renderLegalContent();
   };
 
   document.querySelectorAll("[data-lang]").forEach((button) => {
