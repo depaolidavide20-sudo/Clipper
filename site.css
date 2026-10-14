@@ -6395,9 +6395,10 @@ body {
 
   .restaurant-section .section-heading h2 {
     width: 100%;
-    font-size: clamp(3rem, 14vw, 4.5rem);
+    font-size: clamp(2.5rem, 11vw, 3.25rem);
     letter-spacing: 0;
     text-align: center;
+    white-space: nowrap;
   }
 
   .restaurant-section .heading-copy {
